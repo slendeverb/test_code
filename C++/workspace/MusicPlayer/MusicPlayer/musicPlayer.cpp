@@ -39,6 +39,7 @@ void MusicPlayer::keyDown()
 	switch (userKey)
 	{
 	case static_cast<int>(Operation::EXIT):
+		closeMusic();
 		exit(0);
 		break;
 	case static_cast<int>(Operation::PLAY):
