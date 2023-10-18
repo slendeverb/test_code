@@ -5,7 +5,7 @@ MusicPlayer::MusicPlayer()
 {
 	MusicResources::getMusicResources();
 	curIndex = 1;
-	totalNum = static_cast<int>(MusicResources::music.size());
+	totalNum = static_cast<decltype(totalNum)>(MusicResources::music.size());
 	cmd.emplace_back("open ");
 	cmd.emplace_back("play ");
 	cmd.emplace_back("pause ");
