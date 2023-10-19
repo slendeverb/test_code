@@ -21,3 +21,4 @@ _IsIncrementalBuild
 *.db-shm
 *.db-wal
 *.opendb
+*.config

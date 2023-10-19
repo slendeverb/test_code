@@ -14,8 +14,8 @@
 		4.1 上一首和下一首边界处理
 		4.4 随机播放
 */
-#include"musicPlayer.h"
-#include"musicResources.h"
+#include"MusicPlayer.h"
+#include"MusicResources.h"
 
 int main()
 {

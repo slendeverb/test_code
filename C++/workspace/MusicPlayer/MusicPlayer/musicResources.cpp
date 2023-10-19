@@ -1,4 +1,4 @@
-#include "musicResources.h"
+#include "MusicResources.h"
 
 std::map<int, std::string> MusicResources::music;
 

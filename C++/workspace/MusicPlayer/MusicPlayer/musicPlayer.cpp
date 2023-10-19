@@ -1,5 +1,5 @@
-#include "musicPlayer.h"
-#include"musicResources.h"
+#include "MusicPlayer.h"
+#include"MusicResources.h"
 
 MusicPlayer::MusicPlayer()
 {
