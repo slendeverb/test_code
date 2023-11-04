@@ -1,8 +1,4 @@
-#include<iostream>
-#include<fstream>
-#include<vector>
-#include<string>
-#include<memory>
+#include "test.h"
 
 int main()
 {

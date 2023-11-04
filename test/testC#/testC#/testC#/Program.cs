@@ -13,6 +13,7 @@ namespace testC_
             StreamWriter outWriter = null;
             TextReader oldIn = Console.In;
             TextWriter oldOut = Console.Out;
+
             try
             {
                 inStream = new FileStream("../../in.txt", FileMode.Open, FileAccess.Read);
@@ -22,7 +23,6 @@ namespace testC_
             {
                 Console.WriteLine(ex.Message);
             }
-
             Console.SetIn(inReader);
 
             try
@@ -34,7 +34,6 @@ namespace testC_
             {
                 Console.WriteLine(ex.Message);
             }
-
             Console.SetOut(outWriter);
 
             int T = Convert.ToInt32(Console.ReadLine());
