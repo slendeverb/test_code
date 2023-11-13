@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\HeaderUnits.h.obj",
+            "outputs": [
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\testC++\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\testC++\\x64\\Debug\\HeaderUnits.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "HeaderUnits.h",
+                    "source-path": "c:\\users\\slendeverb\\documents\\code\\test\\testc++\\testc++\\headerunits.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "employee"
+                }
+            ]
+        }
+    ]
+}

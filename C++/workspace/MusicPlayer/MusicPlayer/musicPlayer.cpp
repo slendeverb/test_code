@@ -36,28 +36,29 @@ void MusicPlayer::keyDown()
 	showMusic();
 	std::cout << "ÇëÊäÈëÄãµÄÑ¡Ôñ:";
 	std::cin >> userKey;
-	switch (userKey)
+	switch (static_cast<Operation>(userKey))
 	{
-	case static_cast<int>(Operation::EXIT):
+		using enum Operation;
+	case EXIT:
 		closeMusic();
 		exit(0);
 		break;
-	case static_cast<int>(Operation::PLAY):
+	case PLAY:
 		playMusic();
 		break;
-	case static_cast<int>(Operation::PAUSE):
+	case PAUSE:
 		pauseMusic();
 		break;
-	case static_cast<int>(Operation::RESUME):
+	case RESUME:
 		resumeMusic();
 		break;
-	case static_cast<int>(Operation::NEXT_ONE):
+	case NEXT_ONE:
 		nextMusic();
 		break;
-	case static_cast<int>(Operation::PREV_ONE):
+	case PREV_ONE:
 		prevMusic();
 		break;
-	case static_cast<int>(Operation::RANDOM_PLAY):
+	case RANDOM_PLAY:
 		randomPlay();
 		break;
 	default:
