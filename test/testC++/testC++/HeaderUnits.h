@@ -1,16 +1,31 @@
 #pragma once
-#include<iostream>
-#include<vector>
-#include<string>
-#include<optional>
-#include<utility>
-#include<format>
-#include<cstddef>
-#include<limits>
-#include<cmath>
-#include<compare>
-#include<cstdlib>
-#include<array>
-#include<xutility>
-#include<fstream>
-import employee;
+#include <algorithm>
+#include <array>
+#include <charconv>
+#include <cmath>
+#include <compare>
+#include <cstddef>
+#include <cstdlib>
+#include <exception>
+#include <format>
+#include <fstream>
+#include <initializer_list>
+#include <iostream>
+#include <limits>
+#include <locale>
+#include <map>
+#include <memory>
+#include <numbers>
+#include <optional>
+#include <set>
+#include <span>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <thread>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
+#include <windows.h>

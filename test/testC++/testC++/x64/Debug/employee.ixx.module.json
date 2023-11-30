@@ -3,35 +3,35 @@
     "revision": 0,
     "rules": [
         {
-            "primary-output": "x64\\Debug\\employee.ixx.obj",
+            "primary-output": "x64/Debug/employee.ixx.obj",
             "outputs": [
-                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\testC++\\x64\\Debug\\vc143.pdb",
-                "x64\\Debug\\",
-                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\testC++\\x64\\Debug\\employee.ixx.ifc"
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/vc143.pdb",
+                "x64/Debug/",
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/employee.ixx.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "employee",
-                    "source-path": "c:\\users\\slendeverb\\documents\\code\\test\\testc++\\testc++\\employee.ixx",
+                    "source-path": "c:/users/slendeverb/documents/code/test/testc++/testc++/employee.ixx",
                     "is-interface": true
                 }
             ],
             "requires": [
                 {
                     "logical-name": "iostream",
-                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include\\iostream",
+                    "source-path": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/include/iostream",
                     "lookup-method": "include-angle",
                     "unique-on-source-path": true
                 },
                 {
                     "logical-name": "string",
-                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include\\string",
+                    "source-path": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/include/string",
                     "lookup-method": "include-angle",
                     "unique-on-source-path": true
                 },
                 {
                     "logical-name": "format",
-                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include\\format",
+                    "source-path": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/include/format",
                     "lookup-method": "include-angle",
                     "unique-on-source-path": true
                 }

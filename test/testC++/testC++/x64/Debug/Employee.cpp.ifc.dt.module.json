@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:/users/slendeverb/documents/code/test/testc++/testc++/employee.cpp",
+        "ProvidedModule": "",
+        "ImportedModules": [
+            "employee"
+        ],
+        "ImportedHeaderUnits": [
+            "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/include/iostream",
+            "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/include/format"
+        ]
+    }
+}

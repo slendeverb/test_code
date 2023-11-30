@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64/Debug/optional_LG3N2GC8F9VHXJU9.obj",
+            "outputs": [
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/vc143.pdb",
+                "x64/Debug/optional_LG3N2GC8F9VHXJU9.module.json",
+                "x64/Debug/optional_LG3N2GC8F9VHXJU9.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/include/optional",
+                    "source-path": "c:/program files/microsoft visual studio/2022/community/vc/tools/msvc/14.38.33130/include/optional",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -27,7 +27,7 @@ namespace testC_
 
             try
             {
-                outStream = new FileStream("../../out.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                outStream = new FileStream("../../out.txt", FileMode.Truncate, FileAccess.Write);
                 outWriter = new StreamWriter(outStream);
             }
             catch (Exception ex)
@@ -39,36 +39,35 @@ namespace testC_
             int T = Convert.ToInt32(Console.ReadLine());
             while (T-- != 0)
             {
-                solve();
+                Solve();
             }
-            inReader.Close(); outWriter.Close();
-            inStream.Close(); outStream.Close();
-            Console.SetIn(oldIn); Console.SetOut(oldOut);
-
+            inReader.Close();
+            outWriter.Close();
+            inStream.Close();
+            outStream.Close();
+            Console.SetIn(oldIn);
+            Console.SetOut(oldOut);
         }
 
-        static void solve()
+        static void Solve()
         {
             int n = Convert.ToInt32(Console.ReadLine());
             string input = Console.ReadLine();
             var arr1 = input.Split(new char[] { ' ', ',' }).Where(items => !string.IsNullOrEmpty(items)).ToList();
-            foreach (string s in arr1)
+            foreach (var item in arr1)
             {
-                Console.Write(s + " ");
+                Console.Write(item.ToString() + " ");
             }
             Console.WriteLine();
 
             int m = Convert.ToInt32(Console.ReadLine());
             input = Console.ReadLine();
             var arr2 = input.Split(new char[] { ' ', ',' }).Where(items => !string.IsNullOrEmpty(items)).ToList();
-            foreach (string s in arr2)
+            foreach (var item in arr2)
             {
-                Console.Write(s + " ");
+                Console.Write(item.ToString() + " ");
             }
             Console.WriteLine();
-
         }
-
     }
-
 }

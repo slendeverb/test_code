@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:/users/slendeverb/documents/code/test/testc++/testc++/employee.cpp",
+        "ProvidedModule": "employee",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
