@@ -3,6 +3,7 @@
 HanoiTower::HanoiTower()
 {
 	readRecord();
+	showInstruction();
 }
 
 void HanoiTower::showMenu()
@@ -11,6 +12,7 @@ void HanoiTower::showMenu()
 	std::cout << "-------------------------------\n";
 	std::cout << "-------> 1. 开始游戏 <---------\n";
 	std::cout << "-------> 2. 游戏记录 <---------\n";
+	std::cout << "-------> 3. 游戏介绍 <---------\n";
 	std::cout << "-------> 0. 退出游戏 <---------\n";
 	std::cout << "-------------------------------\n";
 	std::cout << std::endl;
@@ -44,6 +46,29 @@ void HanoiTower::showRecord()
 		std::cout << i + 1 << ". " << records[i] << "\n";
 	}
 	std::cout << std::endl;
+	system("pause");
+}
+
+void HanoiTower::showInstruction()
+{
+	system("cls");
+	std::cout << "欢迎游玩汉诺塔游戏!\n"
+		<< "游戏介绍:\n"
+		<< "    法国数学家爱德华·卢卡斯曾编写过一个印度的古老传说: "
+		<< "在世界中心贝拿勒斯（在印度北部）的圣庙里,一块黄铜板上插着三根宝石针。"
+		<< "印度教的主神梵天在创造世界的时候,在其中一根针上从下到上地穿好了由大到小的64片金片,这就是所谓的汉诺塔。"
+		<< "不论白天黑夜,总有一个僧侣在按照下面的法则移动这些金片: "
+		<< "一次只移动一片,不管在哪根针上,小片必须在大片上面。"
+		<< "僧侣们预言,当所有的金片都从梵天穿好的那根针上移到另外一根针上时,"
+		<< "世界就将在一声霹雳中消灭,而梵塔、庙宇和众生也都将同归于尽。\n\n";
+
+	std::cout << "下面是汉诺塔游戏的教学: \n"
+		<< "    简单的游戏规则: 有三根杆子A,B,C。A杆上有 N 个 (N>1) 穿孔圆盘，盘的尺寸由下到上依次变小。"
+		<< "要求按下列规则将所有圆盘移至 C 杆：\n"
+		<< "        1.每次只能移动一个圆盘；\n"
+		<< "        2.大盘不能叠在小盘上面。\n"
+		<< "    提示：可将圆盘临时置于 B 杆，也可将从 A 杆移出的圆盘重新移回 A 杆，但都必须遵循上述两条规则。\n"
+		<< std::endl;
 	system("pause");
 }
 
@@ -103,24 +128,6 @@ void HanoiTower::setRecord(const Record& record)
 void HanoiTower::startGame()
 {
 	system("cls");
-	std::cout << "欢迎游玩汉诺塔游戏!\n"
-		<< "游戏介绍:\n"
-		<< "    法国数学家爱德华·卢卡斯曾编写过一个印度的古老传说: "
-		<< "在世界中心贝拿勒斯（在印度北部）的圣庙里,一块黄铜板上插着三根宝石针。"
-		<< "印度教的主神梵天在创造世界的时候,在其中一根针上从下到上地穿好了由大到小的64片金片,这就是所谓的汉诺塔。"
-		<< "不论白天黑夜,总有一个僧侣在按照下面的法则移动这些金片: "
-		<< "一次只移动一片,不管在哪根针上,小片必须在大片上面。"
-		<< "僧侣们预言,当所有的金片都从梵天穿好的那根针上移到另外一根针上时,"
-		<< "世界就将在一声霹雳中消灭,而梵塔、庙宇和众生也都将同归于尽。\n\n";
-
-	std::cout << "下面是汉诺塔游戏的教学: \n"
-		<< "    简单的游戏规则: 有三根杆子A,B,C。A杆上有 N 个 (N>1) 穿孔圆盘，盘的尺寸由下到上依次变小。"
-		<< "要求按下列规则将所有圆盘移至 C 杆：\n"
-		<< "        1.每次只能移动一个圆盘；\n"
-		<< "        2.大盘不能叠在小盘上面。\n"
-		<< "    提示：可将圆盘临时置于 B 杆，也可将从 A 杆移出的圆盘重新移回 A 杆，但都必须遵循上述两条规则。\n"
-		<< std::endl;
-
 	std::cout << "请问是否需要观看示例? (Y or n): ";
 	std::cin.ignore();
 	char yesOrNot = std::cin.get();
@@ -219,10 +226,17 @@ void HanoiTower::play()
 	{
 		success = true;
 		std::cout << "请输入指令移动圆盘(如:1 3,代表把圆盘从A的顶部移动到C的顶部): ";
-		std::cin >> moveMethodFrom >> moveMethodTo;
-		if (moveMethodFrom == 0 || moveMethodTo == 0)
+		std::cin >> moveMethodFrom;
+		if (moveMethodFrom == 0)
 		{
 			showGameOver();
+			return;
+		}
+		std::cin >> moveMethodTo;
+		if (moveMethodTo == 0)
+		{
+			showGameOver();
+			return;
 		}
 		bool moveTry{ movePlayer(moveMethodFrom + 'A' - 1, moveMethodTo + 'A' - 1) };
 		if (!moveTry)

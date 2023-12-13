@@ -20,11 +20,15 @@ int main()
 		case RECORD:
 			hanoiTower.showRecord();
 			break;
+		case INSTRUCTION:
+			hanoiTower.showInstruction();
+			break;
 		case EXIT:
 			std::cout << "退出游戏!\n" << std::endl;
 			break;
 		default:
 			std::cout << "输入无效!\n" << std::endl;
+			system("pause");
 			break;
 		}
 	} while (userKey != 0);

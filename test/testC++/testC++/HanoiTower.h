@@ -2,8 +2,8 @@
 #include <algorithm>
 #include <cctype>
 #include <fstream>
-#include <sstream>
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
 #include <windows.h>
@@ -16,11 +16,13 @@ public:
 	void showMenu();
 	void startGame();
 	void showRecord();
+	void showInstruction();
 
 	enum class Key
 	{
 		START = 1,
 		RECORD = 2,
+		INSTRUCTION = 3,
 		EXIT = 0
 	};
 
