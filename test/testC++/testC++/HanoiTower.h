@@ -1,6 +1,7 @@
 #pragma once
 #include <algorithm>
 #include <cctype>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 #include <sstream>
