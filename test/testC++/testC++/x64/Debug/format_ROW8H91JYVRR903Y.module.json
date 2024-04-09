@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64/Debug/format_ROW8H91JYVRR903Y.obj",
+            "outputs": [
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/vc143.pdb",
+                "x64/Debug/format_ROW8H91JYVRR903Y.module.json",
+                "x64/Debug/format_ROW8H91JYVRR903Y.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/include/format",
+                    "source-path": "c:/program files/microsoft visual studio/2022/community/vc/tools/msvc/14.37.32822/include/format",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:/users/slendeverb/documents/code/test/testc++/testc++/database.cppm",
+        "ProvidedModule": "database",
+        "Includes": [],
+        "ImportedModules": [
+            {
+                "Name": "employee",
+                "BMI": "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/Employee.cppm.ifc.dt"
+            }
+        ],
+        "ImportedHeaderUnits": [
+            {
+                "Header": "c:/program files/microsoft visual studio/2022/community/vc/tools/msvc/14.38.33130/include/string",
+                "BMI": "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/string_3BAE518A7689F6B2.ifc.dt"
+            },
+            {
+                "Header": "c:/program files/microsoft visual studio/2022/community/vc/tools/msvc/14.38.33130/include/vector",
+                "BMI": "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/vector_ACBBE4190EC2CAF4.ifc.dt"
+            }
+        ]
+    }
+}

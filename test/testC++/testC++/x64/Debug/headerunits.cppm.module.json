@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64/Debug/HeaderUnits.cppm.obj",
+            "outputs": [
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/vc143.pdb",
+                "x64/Debug/",
+                "C:/Users/slendeverb/Documents/code/test/testC++/testC++/x64/Debug/HeaderUnits.cppm.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "headerunits",
+                    "source-path": "c:/users/slendeverb/documents/code/test/testc++/testc++/headerunits.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "employee"
+                },
+                {
+                    "logical-name": "database"
+                }
+            ]
+        }
+    ]
+}
