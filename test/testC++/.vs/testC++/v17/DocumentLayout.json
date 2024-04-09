@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "testC\u002B\u002B\\main.cpp",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\main.cpp",
               "RelativeToolTip": "testC\u002B\u002B\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAEAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAIAwwGUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-11-27T03:11:15.819Z",
               "EditorCaption": ""
@@ -57,9 +57,10 @@
               "RelativeDocumentMoniker": "testC\u002B\u002B\\in.txt",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\in.txt",
               "RelativeToolTip": "testC\u002B\u002B\\in.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-07T11:00:30.434Z"
+              "WhenOpened": "2024-04-07T11:00:30.434Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
