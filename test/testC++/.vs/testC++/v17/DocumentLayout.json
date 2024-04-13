@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|solutionrelative:testC\u002B\u002B\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\out.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|solutionrelative:testC\u002B\u002B\\out.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|solutionrelative:testC\u002B\u002B\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\err.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B4EC547B-909E-400D-BA96-B230B6819611}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|solutionrelative:testC\u002B\u002B\\err.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A56ACDAC-D488-4F6D-9CC8-EE0C297A4606}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A56ACDAC-D488-4F6D-9CC8-EE0C297A4606}|testC\u002B\u002B\\testC\u002B\u002B.vcxproj|solutionrelative:testC\u002B\u002B\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,48 +32,10 @@
               "RelativeDocumentMoniker": "testC\u002B\u002B\\main.cpp",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\main.cpp",
               "RelativeToolTip": "testC\u002B\u002B\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2023-11-27T03:11:15.819Z",
+              "WhenOpened": "2024-04-13T05:19:55.654Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "in.txt",
-              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\in.txt",
-              "RelativeDocumentMoniker": "testC\u002B\u002B\\in.txt",
-              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\in.txt",
-              "RelativeToolTip": "testC\u002B\u002B\\in.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-07T11:00:30.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "out.txt",
-              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\out.txt",
-              "RelativeDocumentMoniker": "testC\u002B\u002B\\out.txt",
-              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\out.txt",
-              "RelativeToolTip": "testC\u002B\u002B\\out.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-07T11:00:38.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "err.txt",
-              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\err.txt",
-              "RelativeDocumentMoniker": "testC\u002B\u002B\\err.txt",
-              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002B\\testC\u002B\u002B\\err.txt",
-              "RelativeToolTip": "testC\u002B\u002B\\err.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-07T11:00:46.589Z"
             }
           ]
         }
