@@ -1,8 +1,13 @@
 #include<iostream>
+#include<locale>
+#include<string>
+#include<sstream>
 using namespace std;
 
-void solve() {
 
+
+void solve() {
+	
 }
 
 int main() {
