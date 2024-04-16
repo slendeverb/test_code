@@ -1,7 +1,0 @@
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\bin\Debug\testC#.exe.config
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\bin\Debug\testC#.exe
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\bin\Debug\testC#.pdb
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\obj\Debug\testC#.csproj.AssemblyReference.cache
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\obj\Debug\testC#.csproj.CoreCompileInputs.cache
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\obj\Debug\testC#.exe
-C:\Users\slendeverb\Documents\code\test\testC#\testC#\testC#\obj\Debug\testC#.pdb
