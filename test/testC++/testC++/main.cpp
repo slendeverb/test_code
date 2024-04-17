@@ -1,13 +1,13 @@
 #include<iostream>
 #include<locale>
-#include<string>
 #include<sstream>
+#include<string>
 using namespace std;
 
 
 
 void solve() {
-	
+	std::cout << "hello world" << std::endl;
 }
 
 int main() {
