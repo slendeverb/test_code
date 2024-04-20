@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hymenopteraDataUsage.iml" filepath="$PROJECT_DIR$/.idea/hymenopteraDataUsage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TorchUsageExample.iml" filepath="$PROJECT_DIR$/.idea/TorchUsageExample.iml" />
     </modules>
   </component>
 </project>
