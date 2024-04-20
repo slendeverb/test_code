@@ -2,6 +2,7 @@ import os
 import cv2
 import numpy as np
 from torch.utils.data import Dataset
+from torch.utils.tensorboard import SummaryWriter
 
 
 class MyData(Dataset):
@@ -27,6 +28,10 @@ ants_label_dir = "ants"
 bees_label_dir = "bees"
 ants_dataset = MyData(root_dir, ants_label_dir)
 bees_dataset = MyData(root_dir, bees_label_dir)
-
 train_dataset = ants_dataset + bees_dataset
-print(len(train_dataset))
+
+writer = SummaryWriter("logs")
+image_path = "hymenoptera_data/train/ants/0013035.jpg"
+image = cv2.imdecode(np.fromfile(image_path, dtype=np.uint8), cv2.IMREAD_COLOR)
+writer.add_image("ant", image, 1, dataformats="HWC")
+writer.close() 
