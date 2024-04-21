@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../testC#/.vs/ProjectEvaluation/testc#.metadata.v7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/.vs/ProjectEvaluation/testc#.projects.v7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/.vs/testC#/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/.vs/testC#/v17/.futdcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/.vs/testC#/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../testC#/.vs/testC#/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../testC#/testC#/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/bin/Debug/net8.0/testC#.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/bin/Debug/net8.0/testC#.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/bin/Debug/net8.0/testC#.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/ref/testC#.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/refint/testC#.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/Debug/net8.0/testC#.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/testC#.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/testC#.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC#/testC#/obj/testC#.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/.vs/testC++/v17/DocumentLayout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.compat.ixx.ifc.dt.d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.compat.ixx.ifc.dt.module.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.compat.ixx.ifc.dt.module.json.command" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.ixx.ifc.dt.d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.ixx.ifc.dt.module.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testC++/testC++/x64/Debug/microsoft/STL/std.ixx.ifc.dt.module.json.command" beforeDir="false" />
-    </list>
+    <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -89,10 +58,24 @@
       <updated>1713700847980</updated>
       <workItem from="1713700849188" duration="51000" />
       <workItem from="1713700934239" duration="4000" />
+      <workItem from="1713715560802" duration="96000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1713715624090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713715624090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
