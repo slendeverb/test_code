@@ -1,10 +1,10 @@
-﻿namespace testCsharp
+﻿namespace testC_
 {
-    class Program
+    internal class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            Console.WriteLine("Hello, World!");
         }
     }
 }
