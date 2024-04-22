@@ -37,7 +37,7 @@ input = torch.ones((64, 3, 32, 32))
 output = tudui(input)
 print(output.shape)
 
-writer = SummaryWriter(log_dir='./logs')
+writer = SummaryWriter(log_dir='../logs')
 
 writer.add_graph(tudui, input)
 writer.close()

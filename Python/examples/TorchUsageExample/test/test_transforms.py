@@ -2,10 +2,10 @@ from PIL import Image
 from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 
-img_path = "hymenoptera_data/train/ants/0013035.jpg"
+img_path = "../hymenoptera_data/train/ants/0013035.jpg"
 img = Image.open(img_path)
 
-writer = SummaryWriter("logs")
+writer = SummaryWriter("../logs")
 
 # ToTensor
 trans_totensor = transforms.ToTensor()

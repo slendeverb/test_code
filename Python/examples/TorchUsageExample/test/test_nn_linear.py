@@ -3,7 +3,7 @@ import torchvision
 from torch import nn
 from torch.utils.data import DataLoader
 
-dataset = torchvision.datasets.CIFAR10(root="./CIFAR10", train=False, transform=torchvision.transforms.ToTensor(),
+dataset = torchvision.datasets.CIFAR10(root="../CIFAR10", train=False, transform=torchvision.transforms.ToTensor(),
                                        download=True)
 
 dataloader = DataLoader(dataset, batch_size=64, shuffle=True, drop_last=True)

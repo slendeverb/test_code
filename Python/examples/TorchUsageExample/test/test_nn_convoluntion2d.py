@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.utils.tensorboard import SummaryWriter
 
 dataset = torchvision.datasets.CIFAR10(
-    "./CIFAR10", train=False, transform=torchvision.transforms.ToTensor(), download=True
+    "../CIFAR10", train=False, transform=torchvision.transforms.ToTensor(), download=True
 )
 
 dataloader = DataLoader(dataset, batch_size=64, shuffle=True, num_workers=0,drop_last=False)
@@ -26,7 +26,7 @@ class Tudui(nn.Module):
 tudui = Tudui()
 # print(tudui)
 
-writer = SummaryWriter(log_dir="./logs")
+writer = SummaryWriter(log_dir="../logs")
 
 step = 0
 for data in dataloader:

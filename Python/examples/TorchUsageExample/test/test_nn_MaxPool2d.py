@@ -13,7 +13,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 # print(input.shape)
 
-dataset = torchvision.datasets.CIFAR10(root="./CIFAR10", train=False, transform=torchvision.transforms.ToTensor(),
+dataset = torchvision.datasets.CIFAR10(root="../CIFAR10", train=False, transform=torchvision.transforms.ToTensor(),
                                        download=True)
 
 dataloader = DataLoader(dataset, batch_size=64, shuffle=True)
@@ -29,7 +29,7 @@ class Tudui(torch.nn.Module):
         return output
 
 
-writer = SummaryWriter(log_dir="./logs")
+writer = SummaryWriter(log_dir="../logs")
 
 step = 0
 tudui = Tudui()
