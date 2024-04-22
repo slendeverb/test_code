@@ -30,7 +30,7 @@ writer = SummaryWriter(log_dir="./logs")
 
 step = 0
 for data in dataloader:
-    imgs, target = data
+    imgs, targets = data
     output = tudui(imgs)
     # print(imgs.shape)
     # print(output.shape)
