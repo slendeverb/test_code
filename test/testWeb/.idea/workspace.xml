@@ -4,6 +4,7 @@
     <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="update">
       <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,6 +64,7 @@
       <workItem from="1713700934239" duration="4000" />
       <workItem from="1713715560802" duration="96000" />
       <workItem from="1713862231165" duration="130000" />
+      <workItem from="1713869793245" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
