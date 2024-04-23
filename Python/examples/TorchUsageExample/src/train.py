@@ -1,10 +1,11 @@
-import torch
 import torchvision
-from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
 from model import *
+
+# 定义训练的设备
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # 准备数据集
 train_data = torchvision.datasets.CIFAR10(root="../CIFAR10", train=True, download=True,
@@ -26,9 +27,11 @@ test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True, drop_last=T
 
 # 创建网络模型
 tudui = Tudui()
+tudui = tudui.to(device)
 
 # 损失函数
 loss_fn = nn.CrossEntropyLoss()
+loss_fn = loss_fn.to(device)
 
 # 优化器
 learning_rate = 1e-3
@@ -53,6 +56,8 @@ for epoch in range(epochs):
     for data in train_dataloader:
         optimizer.zero_grad()
         imgs, targets = data
+        imgs = imgs.to(device)
+        targets = targets.to(device)
         outputs = tudui(imgs)
         loss = loss_fn(outputs, targets)
         loss.backward()
@@ -70,16 +75,18 @@ for epoch in range(epochs):
     with torch.no_grad():
         for data in test_dataloader:
             imgs, targets = data
+            imgs = imgs.to(device)
+            targets = targets.to(device)
             outputs = tudui(imgs)
             loss = loss_fn(outputs, targets)
             total_test_loss += loss.item()
-            accuracy=outputs.argmax(axis=1).eq(targets).sum().item()
+            accuracy = outputs.argmax(axis=1).eq(targets).sum().item()
             total_accuracy += accuracy
 
     print(f"整体测试集上的Loss: {total_test_loss}")
-    print(f"整体测试集上的正确率: {total_accuracy/test_data_size}")
+    print(f"整体测试集上的正确率: {total_accuracy / test_data_size}")
     writer.add_scalar("test_loss", total_test_loss, total_test_step)
-    writer.add_scalar("test_accuracy", total_accuracy/test_data_size, total_test_step)
+    writer.add_scalar("test_accuracy", total_accuracy / test_data_size, total_test_step)
     total_test_step += 1
 
     torch.save(tudui, f"../models/tudui/tudui_{epoch}.pth")
