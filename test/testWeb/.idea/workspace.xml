@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="update" />
+    <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="update">
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +62,7 @@
       <workItem from="1713700849188" duration="51000" />
       <workItem from="1713700934239" duration="4000" />
       <workItem from="1713715560802" duration="96000" />
+      <workItem from="1713862231165" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
