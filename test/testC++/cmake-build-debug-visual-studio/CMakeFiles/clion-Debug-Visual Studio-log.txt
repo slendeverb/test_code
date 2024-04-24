@@ -13,6 +13,6 @@
 -- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
 -- Autodetected CUDA architecture(s):  8.6
 -- Added CUDA NVCC flags for: -gencode;arch=compute_86,code=sm_86
--- Configuring done (6.0s)
+-- Configuring done (6.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug-visual-studio
