@@ -1,3 +1,4 @@
+import torch.nn
 import torchvision
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
@@ -26,12 +27,17 @@ train_dataloader = DataLoader(train_data, batch_size=64, shuffle=True, drop_last
 test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True, drop_last=True)
 
 # 创建网络模型
-tudui = Tudui()
-tudui = tudui.to(device)
+# tudui = Tudui()
+# tudui = tudui.to(device)
+# vgg16_false=torchvision.models.vgg16(weights=None)
+# torch.save(vgg16_false,"../models/vgg16/not_trained/vgg16_false.pth")
+tudui=torch.load("../models/tudui/tudui_15.pth")
+tudui.classifier[6]=torch.nn.Linear(4096,10)
+tudui.to(device)
 
 # 损失函数
 loss_fn = nn.CrossEntropyLoss()
-loss_fn = loss_fn.to(device)
+loss_fn.to(device)
 
 # 优化器
 learning_rate = 1e-3

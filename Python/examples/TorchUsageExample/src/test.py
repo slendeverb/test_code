@@ -1,6 +1,10 @@
 import torch
+import torchvision
 from PIL import Image
 from torchvision import transforms
+
+test_data = torchvision.datasets.CIFAR10(root="../CIFAR10", train=False, download=True,
+                                         transform=torchvision.transforms.ToTensor())
 
 image_path = "../imgs/dog.jpg"
 image = Image.open(image_path).convert('RGB')
@@ -11,7 +15,7 @@ transform = transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor
 image = transform(image)
 print(image.shape)
 
-model = torch.load("../models/tudui/tudui_20.pth")
+model = torch.load("../models/tudui/tudui_15.pth")
 print(model)
 
 image = torch.reshape(image, (1, 3, 32, 32))
@@ -22,3 +26,4 @@ with torch.no_grad():
 print(output)
 
 print(output.argmax(axis=1))
+print(test_data.classes[output.argmax(axis=1).item()])

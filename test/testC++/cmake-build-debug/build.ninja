@@ -52,6 +52,7 @@ build cmake_object_order_depends_target_testC__: phony || CMakeFiles/testC__.dir
 build CMakeFiles/testC__.dir/main.cpp.obj: CXX_COMPILER__testC___unscanned_Debug C$:/Users/slendeverb/Documents/code/test/testC++/main.cpp || cmake_object_order_depends_target_testC__
   DEP_FILE = CMakeFiles\testC__.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/opencv/build/include -IC:/opencv/build/include/opencv2
   OBJECT_DIR = CMakeFiles\testC__.dir
   OBJECT_FILE_DIR = CMakeFiles\testC__.dir
 
@@ -65,7 +66,8 @@ build CMakeFiles/testC__.dir/main.cpp.obj: CXX_COMPILER__testC___unscanned_Debug
 
 build testC__.exe: CXX_EXECUTABLE_LINKER__testC___Debug CMakeFiles/testC__.dir/main.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lopencv_world480d  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/opencv/build/x64/vc16/lib
   OBJECT_DIR = CMakeFiles\testC__.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
