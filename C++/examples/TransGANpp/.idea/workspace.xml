@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -21,142 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaf18c5b-6044-492c-b4ee-5525e08e6587" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TransGANpp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cache-v2-8c77d49ba2aa4307338d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cmakeFiles-v1-5f53b69bcb683ca0dd6c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/codemodel-v2-6185c0d64c2323e89398.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/index-2024-04-24T05-09-39-0205.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-testC__-Debug-a50d23a183b3b393e953.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/toolchains-v1-33a2cf49b45b1f1e7b5b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCUDACompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/a.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/a.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.gpu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.stub.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.module_id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.ptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.sm_52.cubin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a.exe.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.fatbin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.fatbin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.obj.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.reg.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin.optf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/ShowIncludes/foo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/ShowIncludes/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-Debug-Visual Studio-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/testC__.dir/CXXDependInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/detect_cuda_compute_capabilities.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/detect_cuda_version.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/testC++.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cache-v2-b60185cd90f39926acbe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cmakeFiles-v1-92154e51b33254535eb7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/codemodel-v2-d0f7bbc083a05ee99acb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/index-2024-04-24T05-13-53-0008.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-testC__-Debug-f06d1678309ee797dfed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/.cmake/api/v1/reply/toolchains-v1-33a2cf49b45b1f1e7b5b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCUDACompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/a.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/a.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.gpu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.stub.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.module_id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.ptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/CMakeCUDACompilerId.sm_52.cubin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a.exe.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.fatbin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.fatbin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.obj.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.reg.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin.optf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/ShowIncludes/foo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/ShowIncludes/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/clion-Debug-Visual Studio-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/CMakeFiles/testC__.dir/CXXDependInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/detect_cuda_compute_capabilities.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/cmake-build-debug-visual-studio/detect_cuda_version.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../test/testC++/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,27 +37,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "slendeverb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;slendeverb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/slendeverb/test_code.git",
-    "accountId": "a01a4e5f-c7eb-4136-897c-803bb0c08648"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/slendeverb/test_code.git&quot;,
+    &quot;accountId&quot;: &quot;a01a4e5f-c7eb-4136-897c-803bb0c08648&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
     <option name="minorVersion" value="1" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fXofOzlFf04zvojlkFQ26KDHyk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -213,7 +80,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
+    "settings.editor.selected.configurable": "CppCodeGenerationId",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -223,11 +90,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TransGANpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TransGANpp" TARGET_NAME="TransGANpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TransGANpp" RUN_TARGET_NAME="TransGANpp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -243,6 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1713956886062</updated>
       <workItem from="1713956889646" duration="682000" />
+      <workItem from="1713958362999" duration="30000" />
+      <workItem from="1713958667724" duration="110000" />
     </task>
     <servers />
   </component>
@@ -253,5 +117,20 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>217</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
