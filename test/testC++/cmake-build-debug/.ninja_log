@@ -1,0 +1,13 @@
+# ninja log v5
+6	175	7356610064197494	CMakeFiles/testC__.dir/main.cpp.obj.ddi	450721916c860d5c
+177	209	7356610064549416	CMakeFiles/testC__.dir/CXX.dd	d22de3e9afc32211
+177	209	7356610064549416	C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/testC__.dir/CXXModules.json	d22de3e9afc32211
+177	209	7356610064549416	CMakeFiles/testC__.dir/main.cpp.obj.modmap	d22de3e9afc32211
+210	1532	7356610077744552	CMakeFiles/testC__.dir/main.cpp.obj	53aad881cb2eda50
+1532	1874	7356610080970601	testC__.exe	8cf119c084465d0c
+4	163	7356613200873211	CMakeFiles/testC__.dir/main.cpp.obj.ddi	450721916c860d5c
+164	199	7356613201237069	CMakeFiles/testC__.dir/CXX.dd	d22de3e9afc32211
+164	199	7356613201237069	C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/testC__.dir/CXXModules.json	d22de3e9afc32211
+164	199	7356613201237069	CMakeFiles/testC__.dir/main.cpp.obj.modmap	d22de3e9afc32211
+202	1467	7356613213894284	CMakeFiles/testC__.dir/main.cpp.obj	53aad881cb2eda50
+1468	1636	7356613215230949	testC__.exe	8cf119c084465d0c

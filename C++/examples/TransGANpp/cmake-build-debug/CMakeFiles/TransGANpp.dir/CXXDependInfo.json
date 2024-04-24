@@ -1,0 +1,26 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp",
+	"dir-top-bld" : "C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug",
+	"dir-top-src" : "C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\libtorch-win-shared-with-deps-debug-2.2.2+cu121\\include",
+		"C:\\libtorch-win-shared-with-deps-debug-2.2.2+cu121\\include\\torch\\csrc\\api\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\\\include",
+		"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\include",
+		"C:\\opencv\\build\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug/CMakeFiles/TransGANpp.dir"
+}

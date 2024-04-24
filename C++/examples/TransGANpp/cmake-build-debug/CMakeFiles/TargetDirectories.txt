@@ -1,0 +1,3 @@
+C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug/CMakeFiles/TransGANpp.dir
+C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

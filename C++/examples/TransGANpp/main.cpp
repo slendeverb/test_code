@@ -78,7 +78,7 @@ struct PositionalEncodingImpl : torch::nn::Module {
         register_buffer(module_name + "_pe", pe);
     }
 
-    //� ���� [batch_size, seq_len, emb_dim]
+    //[batch_size, seq_len, emb_dim]
     torch::Tensor forward(torch::Tensor x) {
         //[1, 5000, 100]
         auto peb = pe.index({
@@ -104,7 +104,7 @@ struct TransGANppGeneratorImpl : torch::nn::Module {
 
     TransGANppGeneratorImpl(
         const std::string &module_name = "generator",
-        int kNoiseSize = 100, //��� ��������� ������ �������� ������� ���� ����������� �� ������ �������������
+        int kNoiseSize = 100,
         int patch_size = 16,
         float pos_drop_rate = 0.1,
         int n_head = 4,
@@ -113,7 +113,7 @@ struct TransGANppGeneratorImpl : torch::nn::Module {
     ) : torch::nn::Module(module_name),
         input(torch::nn::LinearOptions(
             kNoiseSize,
-            kNoiseSize * 4/*����� ������������������ ��� patch_size = 16 � �������� 28 �� 28*/).bias(false)),
+            kNoiseSize * 4).bias(false)),
         pos_encoder(module_name + "_positional_encoding", kNoiseSize, pos_drop_rate),
         transformer_encoder_layers(
             torch::nn::TransformerEncoderLayerOptions(kNoiseSize, n_head).dim_feedforward(256/*default 2048*/).dropout(
@@ -169,14 +169,13 @@ struct TransGANppDiscriminatorImpl : torch::nn::Module {
         int n_layers = 3
     ) : torch::nn::Module(module_name),
         patch_embed(torch::nn::Conv2dOptions(1, embed_dim, patch_size).stride(patch_size).padding(2/*6*/).bias(false)),
-        //������� ���� � ����� �������� ������� ������������������ ������� ����� 4
         pos_encoder(module_name + "_positional_encoding", embed_dim, pos_drop_rate),
         transformer_encoder_layers(
             torch::nn::TransformerEncoderLayerOptions(embed_dim, n_head).dim_feedforward(256/*default 2048*/).dropout(
                 enc_drop_rate)),
         //transformer_encoder(torch::nn::TransformerEncoderOptions(transformer_encoder_layers, n_layers).norm(torch::nn::LayerNorm(torch::nn::LayerNormOptions({ 2 })))),
         transformer_encoder(transformer_encoder_layers, n_layers),
-        head(torch::nn::LinearOptions(embed_dim * 4/*����� ������������������ ��� patch_size = 16 � �������� 28 �� 28*/,
+        head(torch::nn::LinearOptions(embed_dim * 4,
                                       1).bias(false)) {
         register_module(module_name + "_patch_embed", patch_embed);
         register_module(module_name + "_pos_encoder", pos_encoder);
@@ -193,7 +192,6 @@ struct TransGANppDiscriminatorImpl : torch::nn::Module {
         x = pos_encoder(x);
         //[64, 4, 100]
         x = transformer_encoder(x);
-        //�����-�� ����� ���� ������ �������� � ������� ���� ������� - �������� �����
         x = torch::sigmoid(head(x.flatten(1))); //[64, 4, 100] -> [64, 400] -> [64, 1]
         return x;
         //[64, 1, 1, 1]
@@ -319,7 +317,7 @@ int main(int argc, const char *argv[]) {
     discriminator->train();
 
     int64_t checkpoint_counter = 1;
-    //train loop �� ���� �����
+    //train loop
     for (int64_t epoch = 1; epoch <= NUMBER_OF_EPOCHS; epoch++) {
         for (auto &p: discriminator_optimizer.param_groups())
             std::cout << "discriminator optimizer lr = " << p.options().get_lr() << std::endl;
@@ -362,7 +360,6 @@ int main(int argc, const char *argv[]) {
             fake_output = discriminator->forward(fake_images);
             torch::Tensor g_loss = torch::binary_cross_entropy(fake_output, fake_labels);
 
-            //��������� ��������� ����������, ���� ������������� �� ������ ���������
             if (d_loss.item<float>() <= 0.5) {
                 g_loss.backward();
                 generator_optimizer.step();
