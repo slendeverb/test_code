@@ -29,9 +29,9 @@ test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True, drop_last=T
 # 创建网络模型
 # tudui = Tudui()
 # tudui = tudui.to(device)
-# vgg16_false=torchvision.models.vgg16(weights=None)
-# torch.save(vgg16_false,"../models/vgg16/not_trained/vgg16_false.pth")
-tudui=torch.load("../models/tudui/tudui_15.pth")
+vgg16_false=torchvision.models.vgg16(weights=None)
+torch.save(vgg16_false,"../models/vgg16/not_trained/vgg16_false.pth")
+tudui=torch.load("../models/vgg16/not_trained/vgg16_false.pth")
 tudui.classifier[6]=torch.nn.Linear(4096,10)
 tudui.to(device)
 
