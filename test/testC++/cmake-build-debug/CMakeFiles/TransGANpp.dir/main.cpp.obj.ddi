@@ -5,6 +5,7 @@
         {
             "primary-output": "CMakeFiles\\TransGANpp.dir\\main.cpp.obj",
             "outputs": [
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\vc140.pdb",
                 "CMakeFiles\\TransGANpp.dir\\main.cpp.obj.ddi"
             ],
             "requires": []

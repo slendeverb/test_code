@@ -1,8 +1,0 @@
-# ninja log v5
-7	20667	7356604642045626	build.ninja	bad74e417b74577
-169	202	7356604228061688	CMakeFiles/TransGANpp.dir/CXX.dd	db09d492dfe730ec
-169	202	7356604228061688	CMakeFiles/TransGANpp.dir/main.cpp.obj.modmap	db09d492dfe730ec
-5	168	7356604227719241	CMakeFiles/TransGANpp.dir/main.cpp.obj.ddi	1813dfab5ede9c1
-169	202	7356604228061688	C:/Users/slendeverb/Documents/code/C++/examples/TransGANpp/cmake-build-debug/CMakeFiles/TransGANpp.dir/CXXModules.json	db09d492dfe730ec
-203	993	7356604235935907	CMakeFiles/TransGANpp.dir/main.cpp.obj	d1d6fb64a21dd4e
-993	1464	7356604240361556	TransGANpp.exe	256be0c0767800d7
