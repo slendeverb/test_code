@@ -15,7 +15,7 @@ transform = transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor
 image = transform(image)
 print(image.shape)
 
-model = torch.load("../models/tudui/tudui_15.pth")
+model = torch.load("../models/vgg16/not_trained/vgg16_false.pth")
 print(model)
 
 image = torch.reshape(image, (1, 3, 32, 32))
