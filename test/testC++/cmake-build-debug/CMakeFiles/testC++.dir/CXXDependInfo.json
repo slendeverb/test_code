@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/slendeverb/Documents/code/test/testC++",
+	"dir-top-bld" : "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug",
+	"dir-top-src" : "C:/Users/slendeverb/Documents/code/test/testC++",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\opencv\\build\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/testC++.dir"
+}
