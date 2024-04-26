@@ -23,3 +23,9 @@
 161	191	7357650057185860	CMakeFiles/testC++.dir/main.cpp.obj.modmap	928f14abe626fd83
 192	1350	7357650068748291	CMakeFiles/testC++.dir/main.cpp.obj	7ef59e2bb2d67f80
 1350	1628	7357650071047025	testC++.exe	4f4acfd9330bcfe9
+8	238	7358237747353863	CMakeFiles/testC++.dir/main.cpp.obj.ddi	c52137574fce5a4d
+239	274	7358237747739336	CMakeFiles/testC++.dir/CXX.dd	928f14abe626fd83
+239	274	7358237747739336	C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/testC++.dir/CXXModules.json	928f14abe626fd83
+239	274	7358237747739336	CMakeFiles/testC++.dir/main.cpp.obj.modmap	928f14abe626fd83
+275	1954	7358237764469187	CMakeFiles/testC++.dir/main.cpp.obj	7ef59e2bb2d67f80
+1954	2228	7358237766704299	testC++.exe	4f4acfd9330bcfe9
