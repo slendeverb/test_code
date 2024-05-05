@@ -15,11 +15,19 @@
 		[
 			"add_executable",
 			"link_directories",
-			"target_link_libraries"
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"set_property"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Targets.cmake",
+			"C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake",
+			"C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake",
+			"C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake"
 		],
 		"nodes" : 
 		[
@@ -29,7 +37,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -41,8 +49,72 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 16,
+				"line" : 14,
 				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 68,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 113,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 106,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 7
+			},
+			{
+				"file" : 4,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 211,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 218,
+				"parent" : 13
 			}
 		]
 	},
@@ -53,6 +125,29 @@
 			[
 				{
 					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/Z7"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/bigobj"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "USE_C10D_GLOO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_DISTRIBUTED"
 				}
 			],
 			"includes" : 
@@ -61,6 +156,31 @@
 					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "C:/opencv/build/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/libtorch-2.2.2+cu121/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/libtorch-2.2.2+cu121/include/torch/csrc/api/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/Program Files/NVIDIA Corporation/NvToolsExt//include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/Program Files/NVIDIA Corporation/NvToolsExt/include"
 				}
 			],
 			"language" : "CXX",
@@ -173,8 +293,23 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "C:\\opencv\\build\\x64\\vc16\\lib\\opencv_world480d.lib",
-				"role" : "libraries"
+				"fragment" : "-LIBPATH:\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LIBPATH:\\lib\\intel64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LIBPATH:\\lib\\intel64_win",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LIBPATH:\\lib\\win-x64",
+				"role" : "libraryPath"
 			},
 			{
 				"backtrace" : 3,
@@ -249,6 +384,81 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "C:\\opencv\\build\\x64\\vc16\\lib\\opencv_world480d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\opencv\\build\\x64\\vc16\\lib\\opencv_world480d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\kineto.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\\\lib\\x64\\nvToolsExt64_1.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\caffe2_nvrtc.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\c10_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\torch.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\torch_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\torch_cpu.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-INCLUDE:?warp_size@cuda@at@@YAHXZ",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\c10_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "C:\\libtorch-2.2.2+cu121\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "\"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\lib\\x64\\nvToolsExt64_1.lib\"",
 				"role" : "libraries"
 			},
 			{

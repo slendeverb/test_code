@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/c10_cuda.lib"
+			"value" : "C:/libtorch-2.2.2+cu121/lib/c10_cuda.lib"
 		},
 		{
 			"name" : "CAFFE2_NVRTC_LIBRARY",
@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/caffe2_nvrtc.lib"
+			"value" : "C:/libtorch-2.2.2+cu121/lib/caffe2_nvrtc.lib"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -2119,7 +2119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/make2cmake.cmake"
+			"value" : "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/make2cmake.cmake"
 		},
 		{
 			"name" : "CUDA_nppc_LIBRARY",
@@ -2659,7 +2659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/parse_cubin.cmake"
+			"value" : "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/parse_cubin.cmake"
 		},
 		{
 			"name" : "CUDA_run_nvcc",
@@ -2671,7 +2671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/run_nvcc.cmake"
+			"value" : "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/run_nvcc.cmake"
 		},
 		{
 			"name" : "Caffe2_DIR",
@@ -2683,7 +2683,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/share/cmake/Caffe2"
+			"value" : "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_CUDA",
@@ -2731,7 +2731,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/torch.lib][C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/include;C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/include/torch/csrc/api/include;C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\/include][v()]"
+			"value" : "[C:/libtorch-2.2.2+cu121/lib/torch.lib][C:/libtorch-2.2.2+cu121/include;C:/libtorch-2.2.2+cu121/include/torch/csrc/api/include;C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\/include][v()]"
 		},
 		{
 			"name" : "MKLDNN_DIR",
@@ -2767,7 +2767,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/torch.lib"
+			"value" : "C:/libtorch-2.2.2+cu121/lib/torch.lib"
 		},
 		{
 			"name" : "Torch_DIR",
@@ -2779,43 +2779,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/share/cmake/Torch"
-		},
-		{
-			"name" : "TransGANpp_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug"
-		},
-		{
-			"name" : "TransGANpp_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "TransGANpp_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/slendeverb/Documents/code/test/testC++"
+			"value" : "C:/libtorch-2.2.2+cu121/share/cmake/Torch"
 		},
 		{
 			"name" : "c10_LIBRARY",
@@ -2827,7 +2791,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/c10.lib"
+			"value" : "C:/libtorch-2.2.2+cu121/lib/c10.lib"
 		},
 		{
 			"name" : "compile_result",
@@ -2851,7 +2815,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/libtorch-win-shared-with-deps-debug-2.2.2+cu121/lib/kineto.lib"
+			"value" : "C:/libtorch-2.2.2+cu121/lib/kineto.lib"
 		},
 		{
 			"name" : "run_result",

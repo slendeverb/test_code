@@ -5,7 +5,6 @@
         {
             "primary-output": "CMakeFiles\\testC++.dir\\main.cpp.obj",
             "outputs": [
-                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\vc140.pdb",
                 "CMakeFiles\\testC++.dir\\main.cpp.obj.ddi"
             ],
             "requires": []

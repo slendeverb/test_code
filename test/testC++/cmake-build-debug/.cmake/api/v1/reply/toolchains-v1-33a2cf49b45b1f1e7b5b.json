@@ -26,6 +26,29 @@
 		{
 			"compiler" : 
 			{
+				"id" : "NVIDIA",
+				"implicit" : 
+				{
+					"includeDirectories" : [],
+					"linkDirectories" : 
+					[
+						"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/bin/nvcc.exe",
+				"version" : "12.4.131"
+			},
+			"language" : "CUDA",
+			"sourceFileExtensions" : 
+			[
+				"cu"
+			]
+		},
+		{
+			"compiler" : 
+			{
 				"id" : "MSVC",
 				"implicit" : 
 				{

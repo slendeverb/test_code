@@ -13,7 +13,12 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"C:\\opencv\\build\\include"
+		"C:\\opencv\\build\\include",
+		"C:\\libtorch-2.2.2+cu121\\include",
+		"C:\\libtorch-2.2.2+cu121\\include\\torch\\csrc\\api\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\\\include",
+		"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
