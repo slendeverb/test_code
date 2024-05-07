@@ -1,0 +1,26 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake",
+	"dir-cur-src" : "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/testC++VSCMake",
+	"dir-top-bld" : "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug",
+	"dir-top-src" : "C:/Users/slendeverb/Documents/code/test/testC++VSCMake",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\opencv\\build\\include",
+		"C:\\libtorch-2.2.2+cu121\\include",
+		"C:\\libtorch-2.2.2+cu121\\include\\torch\\csrc\\api\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\\\include",
+		"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include",
+		"C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/testC++VSCMake.dir"
+}

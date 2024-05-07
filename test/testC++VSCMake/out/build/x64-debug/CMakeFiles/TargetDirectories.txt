@@ -1,0 +1,5 @@
+C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/testC++VSCMake.dir
+C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/edit_cache.dir
+C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/rebuild_cache.dir

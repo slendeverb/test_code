@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "testC++VSCMake\\CMakeFiles\\testC++VSCMake.dir\\testC++VSCMake.cpp.obj",
+            "outputs": [
+                "testC++VSCMake\\CMakeFiles\\testC++VSCMake.dir\\testC++VSCMake.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}
