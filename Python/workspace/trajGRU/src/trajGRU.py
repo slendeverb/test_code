@@ -182,7 +182,7 @@ class TrajGRU(BaseConvRNN):
             if states is None:
                 states = torch.zeros(
                     (
-                        inputs.size(1), # type: ignore
+                        inputs.size(1),
                         self._num_filter,
                         self._state_height,
                         self._state_width,
