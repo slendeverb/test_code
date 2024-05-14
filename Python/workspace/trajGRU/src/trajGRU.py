@@ -4,19 +4,31 @@ import torch.nn.functional as F
 
 
 class BaseConvRNN(nn.Module):
-    def __init__(self, num_filter, b_h_w, h2h_kernel=(3, 3), h2h_dilate=(1, 1), i2h_kernel=(3, 3),
-                 i2h_stride=(1, 1), i2h_pad=(1, 1), i2h_dilate=(1, 1),
-                 act_type=torch.tanh,
-                 prefix='BaseConvRNN'):
+    def __init__(
+        self,
+        num_filter,
+        b_h_w,
+        h2h_kernel=(3, 3),
+        h2h_dilate=(1, 1),
+        i2h_kernel=(3, 3),
+        i2h_stride=(1, 1),
+        i2h_pad=(1, 1),
+        i2h_dilate=(1, 1),
+        act_type=torch.tanh,
+        prefix="BaseConvRNN",
+    ):
         super(BaseConvRNN, self).__init__()
         self._prefix = prefix
         self._num_filter = num_filter
         self._h2h_kernel = h2h_kernel
         assert (self._h2h_kernel[0] % 2 == 1) and (self._h2h_kernel[1] % 2 == 1), print(
-            "Only support odd number, get h2h_kernel= %s" % str(h2h_kernel))
+            "Only support odd number, get h2h_kernel= %s" % str(h2h_kernel)
+        )
 
-        self._h2h_pad = (h2h_dilate[0] * (h2h_kernel[0] - 1) // 2,
-                         h2h_dilate[1] * (h2h_kernel[1] - 1) // 2)
+        self._h2h_pad = (
+            h2h_dilate[0] * (h2h_kernel[0] - 1) // 2,
+            h2h_dilate[1] * (h2h_kernel[1] - 1) // 2,
+        )
 
         self._h2h_dilate = h2h_dilate
         self._i2h_kernel = i2h_kernel
@@ -29,8 +41,12 @@ class BaseConvRNN(nn.Module):
         i2h_dilate_ksize_h = 1 + (self._i2h_kernel[0] - 1) * self._i2h_dilate[0]
         i2h_dilate_ksize_w = 1 + (self._i2h_kernel[1] - 1) * self._i2h_dilate[1]
         self._batch_size, self._height, self._width = b_h_w
-        self._state_height = (self._height + 2 * self._i2h_pad[0] - i2h_dilate_ksize_h) // self._i2h_stride[0] + 1
-        self._state_width = (self._width + 2 * self._i2h_pad[1] - i2h_dilate_ksize_w) // self._i2h_stride[1] + 1
+        self._state_height = (
+            self._height + 2 * self._i2h_pad[0] - i2h_dilate_ksize_h
+        ) // self._i2h_stride[0] + 1
+        self._state_width = (
+            self._width + 2 * self._i2h_pad[1] - i2h_dilate_ksize_w
+        ) // self._i2h_stride[1] + 1
         self._curr_states = None
         self._counter = 0
 
@@ -47,8 +63,14 @@ def wrap(input, flow):
     grid = torch.cat((xx, yy), 1).float()
     vgrid = grid + flow
 
-    vgrid[:, 0, :, :] = torch.sub(torch.div(torch.mul(2, vgrid[:, 0, :, :].clone().detach()), torch.sub(W, 1)), 1.0)
-    vgrid[:, 1, :, :] = torch.sub(torch.div(torch.mul(2, vgrid[:, 1, :, :].clone().detach()), torch.sub(H, 1)), 1.0)
+    vgrid[:, 0, :, :] = torch.sub(
+        torch.div(torch.mul(2, vgrid[:, 0, :, :].clone().detach()), torch.sub(W, 1)),
+        1.0,
+    )
+    vgrid[:, 1, :, :] = torch.sub(
+        torch.div(torch.mul(2, vgrid[:, 1, :, :].clone().detach()), torch.sub(H, 1)),
+        1.0,
+    )
     # scale grid to [-1,1]
     # vgrid[:,0,:,:] = 2.0 * vgrid[:,0,:,:].clone() / max(W-1,1) - 1.0
     # vgrid[:,1,:,:] = 2.0 * vgrid[:,1,:,:].clone() / max(H-1,1) - 1.0
@@ -61,57 +83,80 @@ def wrap(input, flow):
 
 
 class TrajGRU(BaseConvRNN):
-    def __init__(self, input_channel, num_filter, b_h_w, zoneout=0.2, L=5,
-                 i2h_kernel=(3, 3), i2h_stride=(1, 1), i2h_pad=(1, 1),
-                 h2h_kernel=(5, 5), h2h_dilate=(1, 1), prefix="BaseConvRNN"):
-        super(TrajGRU, self).__init__(num_filter=num_filter,
-                                      b_h_w=b_h_w,
-                                      h2h_kernel=h2h_kernel,
-                                      h2h_dilate=h2h_dilate,
-                                      i2h_kernel=i2h_kernel,
-                                      i2h_stride=i2h_stride,
-                                      i2h_pad=i2h_pad,
-                                      prefix=prefix)
+    def __init__(
+        self,
+        input_channel,
+        num_filter,
+        b_h_w,
+        zoneout=0.2,
+        L=5,
+        i2h_kernel=(3, 3),
+        i2h_stride=(1, 1),
+        i2h_pad=(1, 1),
+        h2h_kernel=(5, 5),
+        h2h_dilate=(1, 1),
+        prefix="BaseConvRNN",
+    ):
+        super(TrajGRU, self).__init__(
+            num_filter=num_filter,
+            b_h_w=b_h_w,
+            h2h_kernel=h2h_kernel,
+            h2h_dilate=h2h_dilate,
+            i2h_kernel=i2h_kernel,
+            i2h_stride=i2h_stride,
+            i2h_pad=i2h_pad,
+            prefix=prefix,
+        )
         self._L = L
         self._zoneout = zoneout
 
         # self._act_type = F.leaky_relu()
         # *3 according to 3 hidden states.
-        self.i2h = nn.Conv2d(in_channels=input_channel,
-                             out_channels=self._num_filter * 3,
-                             kernel_size=self._i2h_kernal,
-                             stride=self._i2h_stride,
-                             padding=self._i2h_padding,
-                             dilation=self._i2h_dilate)
+        self.i2h = nn.Conv2d(
+            in_channels=input_channel,
+            out_channels=self._num_filter * 3,
+            kernel_size=self._i2h_kernal,
+            stride=self._i2h_stride,
+            padding=self._i2h_padding,
+            dilation=self._i2h_dilate,
+        )
 
         # inputs to flow
-        self.i2f_conv1 = nn.Conv2d(in_channels=input_channel,
-                                   out_channels=32,
-                                   kernel_size=(5, 5),
-                                   stride=(1, 1),
-                                   padding=(2, 2),
-                                   dilation=(1, 1))
+        self.i2f_conv1 = nn.Conv2d(
+            in_channels=input_channel,
+            out_channels=32,
+            kernel_size=(5, 5),
+            stride=(1, 1),
+            padding=(2, 2),
+            dilation=(1, 1),
+        )
 
         # hidden to flow
-        self.h2f_conv1 = nn.Conv2d(in_channels=self._num_filter,
-                                   out_channels=32,
-                                   kernel_size=(5, 5),
-                                   stride=(1, 1),
-                                   padding=(2, 2),
-                                   dilation=(1, 1))
+        self.h2f_conv1 = nn.Conv2d(
+            in_channels=self._num_filter,
+            out_channels=32,
+            kernel_size=(5, 5),
+            stride=(1, 1),
+            padding=(2, 2),
+            dilation=(1, 1),
+        )
 
         # generate flow
-        self.flows_conv = nn.Conv2d(in_channels=32,
-                                    out_channels=self._L * 2,
-                                    kernel_size=(5, 5),
-                                    stride=(1, 1),
-                                    padding=(2, 2))
+        self.flows_conv = nn.Conv2d(
+            in_channels=32,
+            out_channels=self._L * 2,
+            kernel_size=(5, 5),
+            stride=(1, 1),
+            padding=(2, 2),
+        )
 
         # hh, hz, hr, 1*1 ks
-        self.ret = nn.Conv2d(in_channels=self._num_filter * self._L,
-                             out_channels=self._num_filter * 3,
-                             kernel_size=(1, 1),
-                             stride=(1, 1))
+        self.ret = nn.Conv2d(
+            in_channels=self._num_filter * self._L,
+            out_channels=self._num_filter * 3,
+            kernel_size=(1, 1),
+            stride=(1, 1),
+        )
 
         # inputs: B C H W
         # flow comes from current inputs and forward states
@@ -135,8 +180,15 @@ class TrajGRU(BaseConvRNN):
         def forward(self, inputs=None, states=None, seq_len=5):
             global next_h
             if states is None:
-                states = torch.zeros((inputs.size(1), self._num_filter, self._state_height, self._state_width),
-                                     dtype=torch.float).cuda()
+                states = torch.zeros(
+                    (
+                        inputs.size(1), # type: ignore
+                        self._num_filter,
+                        self._state_height,
+                        self._state_width,
+                    ),
+                    dtype=torch.float,
+                ).cuda()
 
             if inputs is not None:
                 S, B, C, H, W = inputs.size()
@@ -165,7 +217,11 @@ class TrajGRU(BaseConvRNN):
                 if i2h_slice is not None:
                     reset_gate = torch.sigmoid(i2h_slice[0][i, ...] + h2h_slice[0])
                     update_gate = torch.sigmoid(i2h_slice[1][i, ...] + h2h_slice[1])
-                    new_mem = F.leaky_relu(i2h_slice[2][i, ...] + reset_gate * h2h_slice[2], 0.2, inplace=True)
+                    new_mem = F.leaky_relu(
+                        i2h_slice[2][i, ...] + reset_gate * h2h_slice[2],
+                        0.2,
+                        inplace=True,
+                    )
                 else:
                     reset_gate = torch.sigmoid(h2h_slice[0])
                     update_gate = torch.sigmoid(h2h_slice[1])
