@@ -737,3 +737,371 @@ events:
         8.6 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_4aa20
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_4aa20.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_4aa20.dir\\detect_cuda_version.cc.obj
+        [2/4] "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_4aa20.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_4aa20.dir\\CXX.dd @CMakeFiles\\cmTC_4aa20.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi /showIncludes @CMakeFiles\\cmTC_4aa20.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_4aa20.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_4aa20.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4aa20.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4aa20.dir\\detect_cuda_version.cc.obj  /out:cmTC_4aa20.exe /implib:cmTC_4aa20.lib /pdb:cmTC_4aa20.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+      exitCode: 1
+    runResult:
+      variable: "run_result"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_e9fda
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_e9fda.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_e9fda.dir\\detect_cuda_version.cc.obj
+        [2/4] "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_e9fda.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_e9fda.dir\\CXX.dd @CMakeFiles\\cmTC_e9fda.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes @CMakeFiles\\cmTC_e9fda.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_e9fda.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_e9fda.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e9fda.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e9fda.dir\\detect_cuda_version.cc.obj  /out:cmTC_e9fda.exe /implib:cmTC_e9fda.lib /pdb:cmTC_e9fda.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_157b2
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler=" /EHsc"  -Xcompiler=" -Ob0 -Od /RTC1" -std=c++20 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi -MD -MT CMakeFiles\\cmTC_157b2.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_157b2.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_compute_capabilities.cu -o CMakeFiles\\cmTC_157b2.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_157b2.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_00005de0_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_157b2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_157b2.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_157b2.exe /implib:cmTC_157b2.lib /pdb:cmTC_157b2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64"  && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_eeee7
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_eeee7.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_eeee7.dir\\detect_cuda_version.cc.obj
+        [2/4] "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_eeee7.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_eeee7.dir\\CXX.dd @CMakeFiles\\cmTC_eeee7.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi /showIncludes @CMakeFiles\\cmTC_eeee7.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_eeee7.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_eeee7.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_eeee7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_eeee7.dir\\detect_cuda_version.cc.obj  /out:cmTC_eeee7.exe /implib:cmTC_eeee7.lib /pdb:cmTC_eeee7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+      exitCode: 1
+    runResult:
+      variable: "run_result"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c5e1f
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_c5e1f.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_c5e1f.dir\\detect_cuda_version.cc.obj
+        [2/4] "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_c5e1f.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_c5e1f.dir\\CXX.dd @CMakeFiles\\cmTC_c5e1f.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes @CMakeFiles\\cmTC_c5e1f.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_c5e1f.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_c5e1f.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c5e1f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c5e1f.dir\\detect_cuda_version.cc.obj  /out:cmTC_c5e1f.exe /implib:cmTC_c5e1f.lib /pdb:cmTC_c5e1f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_1018c
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler=" /EHsc"  -Xcompiler=" -Ob0 -Od /RTC1" -std=c++20 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi -MD -MT CMakeFiles\\cmTC_1018c.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_1018c.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_compute_capabilities.cu -o CMakeFiles\\cmTC_1018c.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_1018c.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_000076ac_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1018c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1018c.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_1018c.exe /implib:cmTC_1018c.lib /pdb:cmTC_1018c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64"  && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_13b8a
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_13b8a.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_13b8a.dir\\detect_cuda_version.cc.obj
+        [2/4] "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_13b8a.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_13b8a.dir\\CXX.dd @CMakeFiles\\cmTC_13b8a.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes @CMakeFiles\\cmTC_13b8a.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_13b8a.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_13b8a.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_13b8a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_13b8a.dir\\detect_cuda_version.cc.obj  /out:cmTC_13b8a.exe /implib:cmTC_13b8a.lib /pdb:cmTC_13b8a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -v cmTC_8c7f3
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler=" /EHsc"  -Xcompiler=" -Ob0 -Od /RTC1" -std=c++20 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi -MD -MT CMakeFiles\\cmTC_8c7f3.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_8c7f3.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++\\cmake-build-debug\\detect_cuda_compute_capabilities.cu -o CMakeFiles\\cmTC_8c7f3.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_8c7f3.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_00004374_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8c7f3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8c7f3.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_8c7f3.exe /implib:cmTC_8c7f3.lib /pdb:cmTC_8c7f3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64"  && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
