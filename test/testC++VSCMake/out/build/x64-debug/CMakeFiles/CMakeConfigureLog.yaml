@@ -10203,3 +10203,275 @@ events:
         8.6 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9d5fe
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++latest -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_9d5fe.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_9d5fe.dir\\detect_cuda_version.cc.obj
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vcruntime.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\sal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:       C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\concurrencysal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vadefs.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_malloc.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_search.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stddef.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\limits.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\cstdio
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\yvals_core.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\xkeycheck.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_stdio_config.h
+        [2/4] "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_9d5fe.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_9d5fe.dir\\CXX.dd @CMakeFiles\\cmTC_9d5fe.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++latest -Zi /showIncludes @CMakeFiles\\cmTC_9d5fe.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_9d5fe.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_9d5fe.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9d5fe.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9d5fe.dir\\detect_cuda_version.cc.obj  /out:cmTC_9d5fe.exe /implib:cmTC_9d5fe.lib /pdb:cmTC_9d5fe.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+      exitCode: 1
+    runResult:
+      variable: "run_result"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_90d77
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++latest -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_90d77.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_90d77.dir\\detect_cuda_version.cc.obj
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vcruntime.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\sal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:       C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\concurrencysal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vadefs.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_malloc.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_search.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stddef.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\limits.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\cstdio
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\yvals_core.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\xkeycheck.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_stdio_config.h
+        [2/4] "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_90d77.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_90d77.dir\\CXX.dd @CMakeFiles\\cmTC_90d77.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++latest -Zi /showIncludes @CMakeFiles\\cmTC_90d77.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_90d77.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_90d77.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_90d77.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_90d77.dir\\detect_cuda_version.cc.obj  /out:cmTC_90d77.exe /implib:cmTC_90d77.lib /pdb:cmTC_90d77.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+      exitCode: 1
+    runResult:
+      variable: "run_result"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:103 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5d25c
+        [1/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++20 -Zi C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc -nologo -TP -showIncludes -scanDependencies CMakeFiles\\cmTC_5d25c.dir\\detect_cuda_version.cc.obj.ddi -FoCMakeFiles\\cmTC_5d25c.dir\\detect_cuda_version.cc.obj
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vcruntime.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\sal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:       C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\concurrencysal.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:      C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vadefs.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_malloc.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_search.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stddef.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdlib.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\limits.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\cstdio
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\yvals_core.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\xkeycheck.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:   C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:    C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_wstdio.h
+        ע\xd2\xe2: \xb0\xfc\xba\xac\xceļ\xfe:     C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_stdio_config.h
+        [2/4] "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\\cmTC_5d25c.dir\\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=CMakeFiles\\cmTC_5d25c.dir\\CXX.dd @CMakeFiles\\cmTC_5d25c.dir\\CXX.dd.rsp
+        [3/4] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -std:c++20 -Zi /showIncludes @CMakeFiles\\cmTC_5d25c.dir\\detect_cuda_version.cc.obj.modmap /FoCMakeFiles\\cmTC_5d25c.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_5d25c.dir\\ /FS -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_version.cc
+        C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include\\cuda.h(22423): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+        [4/4] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5d25c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5d25c.dir\\detect_cuda_version.cc.obj  /out:cmTC_5d25c.exe /implib:cmTC_5d25c.lib /pdb:cmTC_5d25c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:111 (try_run)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:171 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/cuda.cmake:342 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/Caffe2Config.cmake:87 (include)"
+      - "C:/libtorch-2.2.2+cu121/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "testC++VSCMake/CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch-2.2.2+cu121/share/cmake/Caffe2;C:/libtorch-2.2.2+cu121/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3a7c0
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler=" /GR /EHsc"  -Xcompiler="-MDd  -Ob0 -Od /RTC1" -std=c++20 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-Zi -MD -MT CMakeFiles\\cmTC_3a7c0.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_3a7c0.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VSCMake\\out\\build\\x64-debug\\testC++VSCMake\\detect_cuda_compute_capabilities.cu -o CMakeFiles\\cmTC_3a7c0.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_3a7c0.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_00000b0c_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3a7c0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3a7c0.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_3a7c0.exe /implib:cmTC_3a7c0.lib /pdb:cmTC_3a7c0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64"  && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...

@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\header.cppm.obj",
+            "outputs": [
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\header.cppm.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "header.cppm",
+                    "source-path": "c:\\users\\slendeverb\\documents\\code\\test\\testc++vs\\testc++vs\\header.cppm",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "header"
+                },
+                {
+                    "logical-name": "std"
+                }
+            ]
+        }
+    ]
+}

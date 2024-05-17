@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f481b10-a071-4a21-83d4-025383ae396b" name="更改" comment="update">
-      <change beforePath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/src/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/testJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,8 @@
       <workItem from="1713958612202" duration="68000" />
       <workItem from="1713958821848" duration="37000" />
       <workItem from="1714061746682" duration="9000" />
+      <workItem from="1715840222803" duration="101000" />
+      <workItem from="1715840335703" duration="88000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />

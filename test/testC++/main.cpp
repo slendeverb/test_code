@@ -1,7 +1,8 @@
 #include <iostream>
+#include <print>
 
 void solve() {
-
+    std::println("{}","Hello world");
 }
 
 int main() {
