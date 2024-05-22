@@ -21,17 +21,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a0823f-1e3b-4e82-be02-8761ff106a12" name="更改" comment="update">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-592374084e6d698e29cb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0cd0c3ac84994555d6db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-05-17T12-05-07-0778.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-testC++-Debug-ddc2eb0c2c39d49bfb01.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/examples/QtCalculator/.vs/QtCalculator/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/examples/QtCalculator/.vs/QtCalculator/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/.idea/TorchUsageExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/.idea/TorchUsageExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/examples/TorchUsageExample/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/workspace/trajGRU/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/workspace/trajGRU/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/workspace/trajGRU/.idea/trajGRU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/workspace/trajGRU/.idea/trajGRU.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-9453eef9b3c6a76b1ac1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-1881e851d57f4f4e5f0c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-05-05T11-33-45-0387.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-testC++-Debug-656a422d1e510650af5f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/.idea/.idea.testCSharp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/.idea/.idea.testCSharp/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/.idea/.idea.testCSharp/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/.idea/.idea.testCSharp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/Debug/net8.0/testCSharp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/testCSharp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/testCSharp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/obj/testCSharp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testCSharp/testCSharp/testCSharp.csproj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,16 +114,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.updates",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testC++" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testC++" TARGET_NAME="testC++" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testC++" RUN_TARGET_NAME="testC++">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -126,6 +139,7 @@
       <workItem from="1715840858377" duration="12000" />
       <workItem from="1715840878066" duration="94000" />
       <workItem from="1715947175736" duration="1355000" />
+      <workItem from="1716394680720" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
