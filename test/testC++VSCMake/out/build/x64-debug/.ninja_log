@@ -1,7 +1,7 @@
 # ninja log v5
-4	1786	7367787202737227	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.ddi	19696fa9d05bdf52
-1847	1946	7367787204250097	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXX.dd	fde0b8a0938a6f3a
-1954	20707	7367787390689920	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj	8ff293b1255c566b
-1847	1946	7367787204250097	C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXXModules.json	fde0b8a0938a6f3a
-1847	1946	7367787204250097	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.modmap	fde0b8a0938a6f3a
-20747	21665	7367787399282628	testC++VSCMake/testC++VSCMake.exe	549fe6683f18f670
+3	332	7384094056160247	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.ddi	ae4aa4b2903cbbe5
+335	392	7384094056765505	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXX.dd	fde0b8a0938a6f3a
+398	3739	7384094090202285	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj	7fc9db24c92bdbec
+335	392	7384094056765505	C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXXModules.json	fde0b8a0938a6f3a
+335	392	7384094056765505	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.modmap	fde0b8a0938a6f3a
+3741	4077	7384094093361674	testC++VSCMake/testC++VSCMake.exe	82cc6d3c1039ddf2

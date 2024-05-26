@@ -13,8 +13,10 @@
   },
   "ExpandedNodes": [
     "",
-    "\\testC\u002B\u002BVSCMake"
+    "\\testC\u002B\u002BVSCMake",
+    "\\testC\u002B\u002BVSCMake\\include",
+    "\\testC\u002B\u002BVSCMake\\src"
   ],
-  "SelectedNode": "\\testC\u002B\u002BVSCMake\\CMakeLists.txt",
+  "SelectedNode": "\\out",
   "PreviewInSolutionExplorer": false
 }

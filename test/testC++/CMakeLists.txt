@@ -3,13 +3,19 @@ project(testC++)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(OpenCV_DIR C:/opencv/build)
+aux_source_directory(${PROJECT_BINARY_DIR}/../src SRC_LIST)
+include_directories(${PROJECT_BINARY_DIR}/../include)
+
+add_executable(${PROJECT_NAME}
+        ${SRC_LIST}
+)
+
+set(OpenCV_DIR "C:/opencv/build/x64/vc16/lib")
 find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_LIBS})
-link_directories(${OpenCV_LIBS})
+if(OpenCV_FOUND)
+    target_include_directories(${PROJECT_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
+    target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
 
-find_package(Torch REQUIRED)
+endif()
 
-add_executable(testC++ main.cpp)
-target_link_libraries(testC++ "${OpenCV_LIBS}" "${TORCH_LIBRARIES}")
-set_property(TARGET testC++ PROPERTY CXX_STANDARD 26)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 26)

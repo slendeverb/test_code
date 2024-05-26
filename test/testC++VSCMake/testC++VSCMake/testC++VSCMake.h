@@ -4,6 +4,6 @@
 #pragma once
 
 #include <iostream>
-#include <torch/torch.h>
+#include <opencv2/opencv.hpp>
 
 // TODO: 在此处引用程序需要的其他标头。
