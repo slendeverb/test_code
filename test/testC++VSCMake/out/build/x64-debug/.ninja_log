@@ -1,7 +1,0 @@
-# ninja log v5
-3	332	7384094056160247	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.ddi	ae4aa4b2903cbbe5
-335	392	7384094056765505	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXX.dd	fde0b8a0938a6f3a
-398	3739	7384094090202285	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj	7fc9db24c92bdbec
-335	392	7384094056765505	C:/Users/slendeverb/Documents/code/test/testC++VSCMake/out/build/x64-debug/testC++VSCMake/CMakeFiles/testC++VSCMake.dir/CXXModules.json	fde0b8a0938a6f3a
-335	392	7384094056765505	testC++VSCMake/CMakeFiles/testC++VSCMake.dir/testC++VSCMake.cpp.obj.modmap	fde0b8a0938a6f3a
-3741	4077	7384094093361674	testC++VSCMake/testC++VSCMake.exe	82cc6d3c1039ddf2
