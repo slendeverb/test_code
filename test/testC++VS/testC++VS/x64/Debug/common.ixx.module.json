@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\common.ixx.obj",
+            "outputs": [
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\common.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "common",
+                    "source-path": "c:\\users\\slendeverb\\documents\\code\\test\\testc++vs\\testc++vs\\common.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

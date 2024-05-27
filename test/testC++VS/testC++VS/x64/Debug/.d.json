@@ -8,6 +8,10 @@
             {
                 "Name": "std",
                 "BMI": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\microsoft\\STL\\std.ixx.ifc"
+            },
+            {
+                "Name": "common",
+                "BMI": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\common.ixx.ifc"
             }
         ],
         "ImportedHeaderUnits": []

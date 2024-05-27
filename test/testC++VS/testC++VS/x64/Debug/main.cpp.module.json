@@ -11,6 +11,9 @@
             "requires": [
                 {
                     "logical-name": "std"
+                },
+                {
+                    "logical-name": "common"
                 }
             ]
         }
