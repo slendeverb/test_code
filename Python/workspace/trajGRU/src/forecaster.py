@@ -1,35 +1,6 @@
-from trajGRU import *
-
-forecaster_params = [
-    [
-        OrderedDict({'deconv1_leaky_1': [192, 192, 4, 2, 1]}),
-        OrderedDict({'deconv2_leaky_1': [192, 64, 5, 3, 1]}),
-        OrderedDict({
-            'deconv3_leaky_1': [64, 8, 7, 5, 1],
-            'conv3_leaky_2': [8, 8, 3, 1, 1],
-            'conv3_3': [8, 1, 1, 1, 0]
-        }),
-    ],
-
-    [
-        TrajGRU(input_channel=192, num_filter=192,
-                b_h_w=(batch_size, int(config['Sets']['ER31']), int(config['Sets']['ER32'])), zoneout=0.0, L=13,
-                i2h_kernel=(3, 3), i2h_stride=(1, 1), i2h_pad=(1, 1),
-                h2h_kernel=(3, 3), h2h_dilate=(1, 1),
-                ),
-
-        TrajGRU(input_channel=192, num_filter=192,
-                b_h_w=(batch_size, int(config['Sets']['ER21']), int(config['Sets']['ER22'])), zoneout=0.0, L=13,
-                i2h_kernel=(3, 3), i2h_stride=(1, 1), i2h_pad=(1, 1),
-                h2h_kernel=(5, 5), h2h_dilate=(1, 1),
-                ),
-        TrajGRU(input_channel=64, num_filter=64,
-                b_h_w=(batch_size, int(config['Sets']['ER11']), int(config['Sets']['ER12'])), zoneout=0.0, L=9,
-                i2h_kernel=(3, 3), i2h_stride=(1, 1), i2h_pad=(1, 1),
-                h2h_kernel=(5, 5), h2h_dilate=(1, 1),
-                )
-    ]
-]
+import torch
+from torch import nn
+from torchvision.models.vgg import make_layers
 
 
 class Forecaster(nn.Module):

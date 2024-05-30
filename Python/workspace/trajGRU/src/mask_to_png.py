@@ -14,7 +14,8 @@ for root, dirs, files in os.walk(folder_path):
             # 构建文件路径
             mask_path = os.path.join(root, filename)
             # 构建输出文件路径，将 ".mask" 替换为 ".png"
-            png_path = os.path.join(root.replace("radarPNG_mask","radarPNG_mask_png"), filename.replace(".mask", ".png"))
+            png_path = os.path.join(root.replace("radarPNG_mask", "radarPNG_mask_png"),
+                                    filename.replace(".mask", ".png"))
             # 创建目标文件夹
             os.makedirs(os.path.dirname(png_path), exist_ok=True)
 

@@ -5,17 +5,17 @@ import torch.nn.functional as F
 
 class BaseConvRNN(nn.Module):
     def __init__(
-        self,
-        num_filter,
-        b_h_w,
-        h2h_kernel=(3, 3),
-        h2h_dilate=(1, 1),
-        i2h_kernel=(3, 3),
-        i2h_stride=(1, 1),
-        i2h_pad=(1, 1),
-        i2h_dilate=(1, 1),
-        act_type=torch.tanh,
-        prefix="BaseConvRNN",
+            self,
+            num_filter,
+            b_h_w,
+            h2h_kernel=(3, 3),
+            h2h_dilate=(1, 1),
+            i2h_kernel=(3, 3),
+            i2h_stride=(1, 1),
+            i2h_pad=(1, 1),
+            i2h_dilate=(1, 1),
+            act_type=torch.tanh,
+            prefix="BaseConvRNN",
     ):
         super(BaseConvRNN, self).__init__()
         self._prefix = prefix
@@ -42,11 +42,11 @@ class BaseConvRNN(nn.Module):
         i2h_dilate_ksize_w = 1 + (self._i2h_kernel[1] - 1) * self._i2h_dilate[1]
         self._batch_size, self._height, self._width = b_h_w
         self._state_height = (
-            self._height + 2 * self._i2h_pad[0] - i2h_dilate_ksize_h
-        ) // self._i2h_stride[0] + 1
+                                     self._height + 2 * self._i2h_pad[0] - i2h_dilate_ksize_h
+                             ) // self._i2h_stride[0] + 1
         self._state_width = (
-            self._width + 2 * self._i2h_pad[1] - i2h_dilate_ksize_w
-        ) // self._i2h_stride[1] + 1
+                                    self._width + 2 * self._i2h_pad[1] - i2h_dilate_ksize_w
+                            ) // self._i2h_stride[1] + 1
         self._curr_states = None
         self._counter = 0
 
@@ -84,18 +84,18 @@ def wrap(input, flow):
 
 class TrajGRU(BaseConvRNN):
     def __init__(
-        self,
-        input_channel,
-        num_filter,
-        b_h_w,
-        zoneout=0.2,
-        L=5,
-        i2h_kernel=(3, 3),
-        i2h_stride=(1, 1),
-        i2h_pad=(1, 1),
-        h2h_kernel=(5, 5),
-        h2h_dilate=(1, 1),
-        prefix="BaseConvRNN",
+            self,
+            input_channel,
+            num_filter,
+            b_h_w,
+            zoneout=0.2,
+            L=5,
+            i2h_kernel=(3, 3),
+            i2h_stride=(1, 1),
+            i2h_pad=(1, 1),
+            h2h_kernel=(5, 5),
+            h2h_dilate=(1, 1),
+            prefix="BaseConvRNN",
     ):
         super(TrajGRU, self).__init__(
             num_filter=num_filter,

@@ -1,4 +1,4 @@
-from trajGRU import *
+from torch import nn
 
 
 class EF(nn.Module):
