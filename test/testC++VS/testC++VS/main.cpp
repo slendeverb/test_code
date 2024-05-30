@@ -3,9 +3,11 @@ import common;
 
 std::optional<size_t> find_different_letters(std::string_view s, auto& length)
 {
-	for (size_t idx = 0; s.size() - idx >= length;) {
+	size_t idx = 0;
+	for (idx = 0; s.size() - idx >= length;) {
 		unsigned int state = 0;
-		auto rposition{ [&state](auto& slice) -> decltype(auto) {
+		auto slice{ s.substr(idx, length) };
+		auto rposition{ [&state,&slice]() -> decltype(auto) {
 			auto found {
 				[&state](auto& x) -> decltype(auto) {
 					const unsigned int bit_idx = x % 32;
@@ -21,7 +23,7 @@ std::optional<size_t> find_different_letters(std::string_view s, auto& length)
 			}
 			return std::optional<size_t>(std::nullopt);
 		} };
-		if (auto pos = rposition(s.substr(idx, length)).value_or(false)) {
+		if (auto pos = rposition().value_or(false)) {
 			idx += pos;
 		}
 		else {
