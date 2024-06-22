@@ -3,10 +3,7 @@
     "Data": {
         "Source": "c:\\users\\slendeverb\\documents\\code\\test\\testc++vs\\testc++vs\\main.cpp",
         "ProvidedModule": "",
-        "ImportedModules": [
-            "std",
-            "common"
-        ],
+        "ImportedModules": [],
         "ImportedHeaderUnits": []
     }
 }
