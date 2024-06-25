@@ -2,6 +2,7 @@
 
 #include <direct.h>
 #include <winsock2.h>
+
 #include <algorithm>
 #include <charconv>
 #include <codecvt>
@@ -38,6 +39,7 @@ private:
 	bool sendFile();
 	bool receiveFile();
 	bool doPwd();
+	bool doLs();
 	bool doCd(const std::filesystem::path& path);
 	bool isValidPath(const std::filesystem::path& path);
 	bool ftpSend(std::istream& in);
@@ -170,6 +172,16 @@ bool FtpServer::start() {
 							send(clientSocket, ret.c_str(), ret.size(), 0);
 						}
 					}
+					else if (instruction.operation == "ls") {
+						if (!doLs()) {
+							ret = "NAK";
+							send(clientSocket, ret.c_str(), ret.size(), 0);
+						}
+						else {
+							ret = "ACK";
+							send(clientSocket, ret.c_str(), ret.size(), 0);
+						}
+					}
 					else if (instruction.operation == "cd") {
 						if (!doCd(path)) {
 							ret = "NAK";
@@ -261,8 +273,8 @@ bool FtpServer::ftpReceive(std::ostream& out) {
 		return false;
 	}
 	while (size > 0) {
-		long long s = std::min(size, (long long)buffer.size());
 		ret = recv(clientSocket, buffer.data(), buffer.size(), 0);
+		long long s = std::min(size, (long long)buffer.size());
 		if (ret == SOCKET_ERROR) {
 			std::cout << "receive failed" << std::endl;
 			break;
@@ -285,13 +297,19 @@ bool FtpServer::sendFile() {
 bool FtpServer::receiveFile() {
 	std::filesystem::path name{ path.filename() };
 	std::filesystem::path filePath = workDir / name;
-	std::ofstream out(filePath);
+	std::ofstream out(filePath, std::ios::binary);
 	return ftpReceive(out);
 }
 
 bool FtpServer::doPwd() {
 	std::ostringstream out;
 	out << workDir << "\n";
+	std::istringstream in{ out.str() };
+	return ftpSend(in);
+}
+
+bool FtpServer::doLs() {
+	std::ostringstream out;
 	for (const auto& file : std::filesystem::directory_iterator(workDir)) {
 		out << file.path().filename() << "\n";
 	}
