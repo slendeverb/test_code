@@ -8,7 +8,11 @@
                 "C:\\Users\\slendeverb\\Documents\\code\\test\\testC++VS\\testC++VS\\x64\\Debug\\vc143.pdb",
                 "x64\\Debug\\"
             ],
-            "requires": []
+            "requires": [
+                {
+                    "logical-name": "std"
+                }
+            ]
         }
     ]
 }

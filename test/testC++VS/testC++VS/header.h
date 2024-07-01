@@ -1,9 +1,0 @@
-#pragma once
-#define NOMINMAX
-#include <algorithm>
-#include <cstring>
-#include <fstream>
-#include <iostream>
-#include <locale>
-#include <string>
-#include <windows.h>

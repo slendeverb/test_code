@@ -1,9 +1,9 @@
-#include "header.h"
+import std;
 
-void solve() {
+auto solve() -> void {
 
 }
 
-int main() {
+auto main() -> int {
 	solve();
 }
