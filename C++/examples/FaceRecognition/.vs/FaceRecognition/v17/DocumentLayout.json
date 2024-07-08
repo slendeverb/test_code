@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\workspace\\FaceRecognition\\",
+  "WorkspaceRootPath": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\FaceRecognition\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE948EB5-CDD9-4309-A995-B37A74757A16}|FaceRecognition\\FaceRecognition.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\workspace\\FaceRecognition\\FaceRecognition\\Demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DE948EB5-CDD9-4309-A995-B37A74757A16}|FaceRecognition\\FaceRecognition.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\FaceRecognition\\FaceRecognition\\Demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DE948EB5-CDD9-4309-A995-B37A74757A16}|FaceRecognition\\FaceRecognition.vcxproj|solutionrelative:FaceRecognition\\Demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,14 +25,18 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d72bcf2-4e9d-5f31-8118-3e9c6e5b1892}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Demo.cpp",
-              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\workspace\\FaceRecognition\\FaceRecognition\\Demo.cpp",
+              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\FaceRecognition\\FaceRecognition\\Demo.cpp",
               "RelativeDocumentMoniker": "FaceRecognition\\Demo.cpp",
-              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\workspace\\FaceRecognition\\FaceRecognition\\Demo.cpp",
+              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\FaceRecognition\\FaceRecognition\\Demo.cpp",
               "RelativeToolTip": "FaceRecognition\\Demo.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-10-18T15:45:51.139Z",
               "EditorCaption": ""

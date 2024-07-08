@@ -18,23 +18,23 @@ void MusicPlayer::menu()
 	using std::cout;
 	using std::endl;
 
-	cout << "--------------------°æ“Ù¿÷≤•∑≈∆˜°ø---------------------" << endl;
-	cout << "\t\t0.ÕÀ≥ˆ" << endl;
-	cout << "\t\t1.≤•∑≈“Ù¿÷" << endl;
-	cout << "\t\t2.‘›Õ£" << endl;
-	cout << "\t\t3.ºÃ–¯" << endl;
-	cout << "\t\t4.œ¬“ª ◊" << endl;
-	cout << "\t\t5.…œ“ª ◊" << endl;
-	cout << "\t\t6.ÀÊª˙≤•∑≈" << endl;
+	cout << "--------------------„ÄêÈü≥‰πêÊí≠ÊîæÂô®„Äë---------------------" << endl;
+	cout << "\t\t0.ÈÄÄÂá∫" << endl;
+	cout << "\t\t1.Êí≠ÊîæÈü≥‰πê" << endl;
+	cout << "\t\t2.ÊöÇÂÅú" << endl;
+	cout << "\t\t3.ÁªßÁª≠" << endl;
+	cout << "\t\t4.‰∏ã‰∏ÄÈ¶ñ" << endl;
+	cout << "\t\t5.‰∏ä‰∏ÄÈ¶ñ" << endl;
+	cout << "\t\t6.ÈöèÊú∫Êí≠Êîæ" << endl;
 	cout << "--------------------------------------------------------" << endl;
 }
 
 void MusicPlayer::keyDown()
 {
 	int userKey = 0;
-	// œ‘ æ∏Ëµ•-->◊ ‘¥π‹¿Ì
+	// ÊòæÁ§∫Ê≠åÂçï-->ËµÑÊ∫êÁÆ°ÁêÜ
 	showMusic();
-	std::cout << "«Î ‰»Îƒ„µƒ—°‘Ò:";
+	std::cout << "ËØ∑ËæìÂÖ•‰Ω†ÁöÑÈÄâÊã©:";
 	std::cin >> userKey;
 	switch (static_cast<Operation>(userKey))
 	{
@@ -68,7 +68,7 @@ void MusicPlayer::keyDown()
 
 void MusicPlayer::showMusic()
 {
-	std::cout << "∏Ëµ•:" << std::endl;
+	std::cout << "Ê≠åÂçï:" << std::endl;
 	for (auto v : MusicResources::music)
 	{
 		if (v.first == curIndex)
@@ -85,27 +85,27 @@ void MusicPlayer::showMusic()
 void MusicPlayer::playMusic()
 {
 	std::string openCmd = cmd[static_cast<int>(CMD::OPEN)] + MusicResources::music[curIndex];
-	mciSendString(openCmd.c_str(), NULL, 0, NULL);
+	mciSendString(UTF8ToUnicode(openCmd).c_str(), NULL, 0, NULL);
 	std::string playCmd = cmd[static_cast<int>(CMD::PLAY)] + MusicResources::music[curIndex];
-	mciSendString(playCmd.c_str(), NULL, 0, NULL);
+	mciSendString(UTF8ToUnicode(playCmd).c_str(), NULL, 0, NULL);
 }
 
 void MusicPlayer::pauseMusic()
 {
 	std::string pauseCmd = cmd[static_cast<int>(CMD::PAUSE)] + MusicResources::music[curIndex];
-	mciSendString(pauseCmd.c_str(), NULL, 0, NULL);
+	mciSendString(UTF8ToUnicode(pauseCmd).c_str(), NULL, 0, NULL);
 }
 
 void MusicPlayer::resumeMusic()
 {
 	std::string resumeCmd = cmd[static_cast<int>(CMD::RESUME)] + MusicResources::music[curIndex];
-	mciSendString(resumeCmd.c_str(), NULL, 0, NULL);
+	mciSendString(UTF8ToUnicode(resumeCmd).c_str(), NULL, 0, NULL);
 }
 
 void MusicPlayer::closeMusic()
 {
 	std::string closeCmd = cmd[static_cast<int>(CMD::CLOSE)] + MusicResources::music[curIndex];
-	mciSendString(closeCmd.c_str(), NULL, 0, NULL);
+	mciSendString(UTF8ToUnicode(closeCmd).c_str(), NULL, 0, NULL);
 }
 
 void MusicPlayer::nextMusic()
