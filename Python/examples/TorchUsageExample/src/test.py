@@ -13,12 +13,12 @@ print(image)
 transform = transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor()])
 
 image = transform(image)
-print(image.shape)
+print(image.shape) # type: ignore
 
 model = torch.load("../models/vgg16/not_trained/vgg16_false.pth")
 print(model)
 
-image = torch.reshape(image, (1, 3, 32, 32))
+image = torch.reshape(image, (1, 3, 32, 32)) # type: ignore
 image = image.cuda()
 model.eval()
 with torch.no_grad():

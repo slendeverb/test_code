@@ -1,19 +1,26 @@
-import torch.nn
+from torch import nn
+import torch
 import torchvision
 from torch.utils.data import DataLoader
-from torch.utils.tensorboard import SummaryWriter
-
-from model import *
+from torch.utils.tensorboard.writer import SummaryWriter
 
 # 定义训练的设备
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # 准备数据集
-train_data = torchvision.datasets.CIFAR10(root="../CIFAR10", train=True, download=True,
-                                          transform=torchvision.transforms.ToTensor())
+train_data = torchvision.datasets.CIFAR10(
+    root="../CIFAR10",
+    train=True,
+    download=True,
+    transform=torchvision.transforms.ToTensor(),
+)
 
-test_data = torchvision.datasets.CIFAR10(root="../CIFAR10", train=False, download=True,
-                                         transform=torchvision.transforms.ToTensor())
+test_data = torchvision.datasets.CIFAR10(
+    root="../CIFAR10",
+    train=False,
+    download=True,
+    transform=torchvision.transforms.ToTensor(),
+)
 
 # length
 train_data_size = len(train_data)
@@ -29,10 +36,10 @@ test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True, drop_last=T
 # 创建网络模型
 # tudui = Tudui()
 # tudui = tudui.to(device)
-vgg16_false=torchvision.models.vgg16(weights=None)
-torch.save(vgg16_false,"../models/vgg16/not_trained/vgg16_false.pth")
-tudui=torch.load("../models/vgg16/not_trained/vgg16_false.pth")
-tudui.classifier[6]=torch.nn.Linear(4096,10)
+vgg16_false = torchvision.models.vgg16(weights=None)
+torch.save(vgg16_false, "../models/vgg16/not_trained/vgg16_false.pth")
+tudui = torch.load("../models/vgg16/not_trained/vgg16_false.pth")
+tudui.classifier[6] = torch.nn.Linear(4096, 10)
 tudui.to(device)
 
 # 损失函数
