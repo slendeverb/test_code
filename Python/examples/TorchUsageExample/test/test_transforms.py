@@ -1,6 +1,6 @@
 from PIL import Image
 from torchvision import transforms
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 img_path = "../hymenoptera_data/train/ants/0013035.jpg"
 img = Image.open(img_path)
@@ -31,7 +31,7 @@ writer.add_image("Resize", img_resize)
 trans_resize_2 = transforms.Resize(512)
 trans_compose = transforms.Compose([trans_resize_2, trans_totensor])
 img_compose_resize_2 = trans_compose(img)
-print(img_compose_resize_2.size())
+print(img_compose_resize_2.size()) # type: ignore
 writer.add_image("Compose - resize - 2", img_compose_resize_2)
 
 # RandomCrop

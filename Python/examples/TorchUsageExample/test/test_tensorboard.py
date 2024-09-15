@@ -1,4 +1,4 @@
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 import cv2
 import numpy as np
 
