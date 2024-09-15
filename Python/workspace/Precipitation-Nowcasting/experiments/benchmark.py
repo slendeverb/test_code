@@ -30,16 +30,16 @@ conv2d_network = Predictor(conv2d_params).to(cfg.GLOBAL.DEVICE)
 
 encoder_forecaster1 = encoder_forecaster1.to(cfg.GLOBAL.DEVICE)
 encoder_forecaster2 = encoder_forecaster2.to(cfg.GLOBAL.DEVICE)
-encoder_forecaster1.load_state_dict(torch.load('/home/hzzone/save/trajGRU_balanced_mse_mae/models/encoder_forecaster_77000.pth'))
-encoder_forecaster2.load_state_dict(torch.load('/home/hzzone/save/trajGRU_frame_weighted_mse/models/encoder_forecaster_45000.pth'))
-conv2d_network.load_state_dict(torch.load('/home/hzzone/save/conv2d/models/encoder_forecaster_60000.pth'))
+encoder_forecaster1.load_state_dict(torch.load('/home/stwings/code/model/trajGRU_balanced_mse_mae/models/encoder_forecaster_1.pth'))
+encoder_forecaster2.load_state_dict(torch.load('/home/stwings/code/model/trajGRU_frame_weighted_mse/models/encoder_forecaster_1.pth'))
+conv2d_network.load_state_dict(torch.load('/home/stwings/code/model/conv2d/models/encoder_forecaster_1.pth'))
 
 convlstm_encoder = Encoder(convlstm_encoder_params[0], convlstm_encoder_params[1]).to(cfg.GLOBAL.DEVICE)
 
 convlstm_forecaster = Forecaster(convlstm_forecaster_params[0], convlstm_forecaster_params[1]).to(cfg.GLOBAL.DEVICE)
 
 convlstm_encoder_forecaster = EF(convlstm_encoder, convlstm_forecaster).to(cfg.GLOBAL.DEVICE)
-convlstm_encoder_forecaster.load_state_dict(torch.load('/home/hzzone/save/convLSTM_balacned_mse_mae/models/encoder_forecaster_64000.pth'))
+convlstm_encoder_forecaster.load_state_dict(torch.load('/home/stwings/code/model/convLSTM_balacned_mse_mae/models/encoder_forecaster_1.pth'))
 
 models = OrderedDict({
     'convLSTM_balacned_mse_mae': convlstm_encoder_forecaster,

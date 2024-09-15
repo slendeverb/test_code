@@ -173,7 +173,6 @@ class TrajGRU(BaseConvRNN):
             outputs.append(next_h)
             prev_h = next_h
 
-        # return torch.cat(outputs), next_h
         return torch.stack(outputs), next_h
 
 

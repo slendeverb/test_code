@@ -16,10 +16,11 @@
 //
 //----------------------------------------------------------------------------------------------------------
 
-
-#include <highgui.h>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>
 #include <iostream>
 #include "VarFlow.h" 
+#include <opencv2/imgproc.hpp>
 //#include "ProfTimer.h"
 
 using namespace std;
@@ -169,7 +170,7 @@ void drawLegendHSV(IplImage* imgColor, int radius, int cx, int cy)
      }
      
      cvZero(imgMask);
-     cvCircle( imgMask, cvPoint(radius,radius) , radius, CV_RGB(255,255,255), -1,8,0 );
+     cvCircle( imgMask, cvPoint(radius,radius) , radius, cvScalar(255,255,255), -1,8,0 );
      
      sub_img->origin = imgColor->origin;
      sub_img->widthStep = imgColor->widthStep;
@@ -177,7 +178,7 @@ void drawLegendHSV(IplImage* imgColor, int radius, int cx, int cy)
 	        
      cvCopy(imgLegend, sub_img, imgMask);
      
-     cvCircle( imgColor, cvPoint(cx,cy) , radius, CV_RGB(0,0,0), 1,CV_AA,0 );
+     cvCircle( imgColor, cvPoint(cx,cy) , radius, cvScalar(0,0,0), 1,CV_AA,0 );
      
      cvReleaseImage(&imgLegend);
      cvReleaseImage(&imgMask);
@@ -315,7 +316,7 @@ int main(int argc, char *argv[])
     cvNamedWindow("Color",CV_WINDOW_AUTOSIZE);
     
     // Draw motion field with grid spacing of 10, minimium displacement 1 pixel, arrow length multiplier of 5         
-    drawMotionField(imgU, imgV, imgMotion, 10, 10, 1, 5, CV_RGB(255,0,0));
+    drawMotionField(imgU, imgV, imgMotion, 10, 10, 1, 5, cvScalar(255,0,0));
     drawColorField(imgU, imgV, imgColor);                 
        
     cvShowImage("Color", imgColor);

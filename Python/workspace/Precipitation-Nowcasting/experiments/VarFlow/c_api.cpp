@@ -1,6 +1,6 @@
 #include "c_api.h"
 #include "VarFlow.h"
-#include <highgui.h>
+#include <opencv2/highgui.hpp>
 #include <opencv2/opencv.hpp>
 
 

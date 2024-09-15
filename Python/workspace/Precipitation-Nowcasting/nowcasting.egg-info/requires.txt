@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+moviepy
+numba
+pillow
+six
+easydict
+pyyaml

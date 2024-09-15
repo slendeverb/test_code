@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+nowcasting.egg-info/PKG-INFO
+nowcasting.egg-info/SOURCES.txt
+nowcasting.egg-info/dependency_links.txt
+nowcasting.egg-info/requires.txt
+nowcasting.egg-info/top_level.txt

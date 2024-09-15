@@ -8,8 +8,7 @@
 #ifndef VARFLOW_H
 #define VARFLOW_H
 
-#include <cv.h>
-#include <cxcore.h>
+#include <opencv2/imgproc/imgproc_c.h>
 
 /**
  * @brief Calculates dense optical flow using a variational method.

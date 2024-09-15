@@ -36,7 +36,7 @@ encoder = Encoder(encoder_params[0], encoder_params[1]).to(cfg.GLOBAL.DEVICE)
 forecaster = Forecaster(forecaster_params[0], forecaster_params[1]).to(cfg.GLOBAL.DEVICE)
 
 encoder_forecaster = EF(encoder, forecaster).to(cfg.GLOBAL.DEVICE)
-encoder_forecaster.load_state_dict(torch.load('/home/hzzone/save/trajGRU_balanced_mse_mae/models/encoder_forecaster_77000.pth'))
+encoder_forecaster.load_state_dict(torch.load('/home/stwings/code/model/trajGRU_balanced_mse_mae/models/encoder_forecaster_1.pth'))
 for param in encoder_forecaster.parameters():
     param.requires_grad = False
 
