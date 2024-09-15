@@ -6,7 +6,7 @@ from nowcasting.config import cfg
 import numpy as np
 from nowcasting.hko.evaluation import HKOEvaluation
 from tqdm import tqdm
-from torch.utils.tensorboard.writer import SummaryWriter
+from tensorboardX import SummaryWriter
 import os.path as osp
 import os
 import shutil

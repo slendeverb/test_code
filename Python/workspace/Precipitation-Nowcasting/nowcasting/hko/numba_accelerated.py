@@ -3,7 +3,7 @@ from numba import jit, float32, boolean, int32, float64
 from nowcasting.hko.evaluation import rainfall_to_pixel
 from nowcasting.config import cfg
 
-# @jit(float32(float32, float32, boolean))
+@jit(float32(float32, float32, boolean))
 def get_GDL_numba(prediction, truth, mask):
     """Accelerated version of get_GDL using numba(http://numba.pydata.org/)
 
@@ -88,7 +88,7 @@ def get_hit_miss_counts_numba(prediction, truth, mask, thresholds=None):
     return ret[:, :, :, 0], ret[:, :, :, 1], ret[:, :, :, 2], ret[:, :, :, 3]
 
 
-# @jit(int32(float32, float32, boolean, float32))
+@jit(int32(float32, float32, boolean, float32))
 def _get_hit_miss_counts_numba(prediction, truth, mask, thresholds):
     seqlen, batch_size, _, height, width = prediction.shape
     threshold_num = len(thresholds)
@@ -144,7 +144,7 @@ def get_balancing_weights_numba(data, mask, base_balancing_weights=None, thresho
     return ret
 
 
-# @jit(float32(float32, boolean, float32, float32))
+@jit(float32(float32, boolean, float32, float32))
 def _get_balancing_weights_numba(data, mask, base_balancing_weights, thresholds):
     seqlen, batch_size, _, height, width = data.shape
     threshold_num = len(thresholds)
@@ -165,12 +165,12 @@ def _get_balancing_weights_numba(data, mask, base_balancing_weights, thresholds)
     return ret
 
 if __name__ == '__main__':
-    from nowcasting.hko.evaluation import get_GDL, get_hit_miss_counts, get_balancing_weights
+    from nowcasting.hko_evaluation import get_GDL, get_hit_miss_counts, get_balancing_weights
     from numpy.testing import assert_allclose, assert_almost_equal
 
     prediction = np.random.uniform(size=(10, 16, 1, 480, 480))
     truth = np.random.uniform(size=(10, 16, 1, 480, 480))
-    mask = np.random.randint(low=0, high=2, size=(10, 16, 1, 480, 480)).astype(np.bool_)
+    mask = np.random.randint(low=0, high=2, size=(10, 16, 1, 480, 480)).astype(np.bool)
     import time
 
     begin = time.time()

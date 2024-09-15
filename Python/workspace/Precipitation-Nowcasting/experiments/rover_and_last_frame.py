@@ -6,7 +6,7 @@ from nowcasting.models.trajGRU import wrap
 from scipy.interpolate import NearestNDInterpolator
 import sys
 sys.path.insert(0, './VarFlow')
-from experiments.VarFlow.varflow import VarFlowFactory
+from varflow import VarFlowFactory
 from nowcasting.hko.dataloader import precompute_mask
 
 

@@ -46,7 +46,7 @@ def decode_month(code):
     arccos_res = np.arccos(code[..., 0])
     angle = flag * arccos_res + (1 - flag) * (2 * np.pi - arccos_res)
     month = angle / (2.0 * np.pi) * 12.0
-    month = np.round(month).astype(np.int_)
+    month = np.round(month).astype(np.int)
     return month
 
 
@@ -173,8 +173,8 @@ def precompute_mask(img):
         threshold = round(cfg.HKO.ITERATOR.FILTER_RAINFALL_THRESHOLD * 255.0)
     else:
         threshold = cfg.HKO.ITERATOR.FILTER_RAINFALL_THRESHOLD
-    mask = np.zeros_like(img, dtype=np.bool_)
-    mask[:] = np.broadcast_to((1 - _exclude_mask).astype(np.bool_), shape=img.shape)
+    mask = np.zeros_like(img, dtype=np.bool)
+    mask[:] = np.broadcast_to((1 - _exclude_mask).astype(np.bool), shape=img.shape)
     mask[np.logical_and(img < threshold,
                         img > 0)] = 0
     return mask
@@ -216,7 +216,7 @@ class HKOIterator(object):
             width = cfg.HKO.ITERATOR.WIDTH
         if height is None:
             height = cfg.HKO.ITERATOR.HEIGHT
-        self._df = pd.read_pickle(filepath_or_buffer=pd_path)
+        self._df = pd.read_pickle(path=pd_path)
         self.set_begin_end(begin_ind=begin_ind, end_ind=end_ind)
         self._df_index_set = frozenset([self._df.index[i] for i in range(self._df.size)])
         self._exclude_mask = get_exclude_mask()
@@ -299,7 +299,7 @@ class HKOIterator(object):
         frame_dat = np.zeros((self._seq_len, batch_size, 1, self._height, self._width),
                                   dtype=np.uint8)
         mask_dat = np.zeros((self._seq_len, batch_size, 1, self._height, self._width),
-                                 dtype=np.bool_)
+                                 dtype=np.bool)
         if batch_size==0:
             return frame_dat, mask_dat
         if self.sample_mode == "random":
@@ -316,7 +316,7 @@ class HKOIterator(object):
                         hit_inds.append([i, j])
                     else:
                         miss_inds.append([i, j])
-            hit_inds = np.array(hit_inds, dtype=np.int_)
+            hit_inds = np.array(hit_inds, dtype=np.int)
             all_frame_dat = image.quick_read_frames(path_list=paths,
                                                     im_h=self._height,
                                                     im_w=self._width,

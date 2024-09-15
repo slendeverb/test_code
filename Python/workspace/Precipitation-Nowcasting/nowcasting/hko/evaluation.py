@@ -235,11 +235,11 @@ class HKOEvaluation(object):
         self.begin()
 
     def begin(self):
-        self._total_hits = np.zeros((self._seq_len, len(self._thresholds)), dtype=np.int_)
-        self._total_misses = np.zeros((self._seq_len, len(self._thresholds)),  dtype=np.int_)
-        self._total_false_alarms = np.zeros((self._seq_len, len(self._thresholds)), dtype=np.int_)
+        self._total_hits = np.zeros((self._seq_len, len(self._thresholds)), dtype=np.int)
+        self._total_misses = np.zeros((self._seq_len, len(self._thresholds)),  dtype=np.int)
+        self._total_false_alarms = np.zeros((self._seq_len, len(self._thresholds)), dtype=np.int)
         self._total_correct_negatives = np.zeros((self._seq_len, len(self._thresholds)),
-                                                 dtype=np.int_)
+                                                 dtype=np.int)
         self._mse = np.zeros((self._seq_len, ), dtype=np.float32)
         self._mae = np.zeros((self._seq_len, ), dtype=np.float32)
         self._balanced_mse = np.zeros((self._seq_len, ), dtype=np.float32)
