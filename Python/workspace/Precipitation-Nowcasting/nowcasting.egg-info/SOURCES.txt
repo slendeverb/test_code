@@ -1,4 +1,3 @@
-LICENSE
 README.md
 setup.py
 nowcasting.egg-info/PKG-INFO
