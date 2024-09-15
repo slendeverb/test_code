@@ -34,7 +34,7 @@ def save_mask_file(npy_mask, filepath):
 
 def quick_read_masks(path_list):
     num = len(path_list)
-    read_storage = np.empty((num, 480, 480), dtype=np.bool)
+    read_storage = np.empty((num, 480, 480), dtype=np.bool_)
     # for i in range(num):
     #     read_storage[i] = read_mask_file(path_list[i])
     future_objs = []

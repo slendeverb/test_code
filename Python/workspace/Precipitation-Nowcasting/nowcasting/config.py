@@ -8,7 +8,7 @@ cfg = __C
 __C.GLOBAL = edict()
 __C.GLOBAL.DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 __C.GLOBAL.BATCH_SZIE = 2
-for dirs in ['/home/stwings/code/model']:
+for dirs in ['/home/stwings/code/model','C:/Users/slendeverb/Documents/code/model']:
     if os.path.exists(dirs):
         __C.GLOBAL.MODEL_SAVE_DIR = dirs
 assert __C.GLOBAL.MODEL_SAVE_DIR is not None
@@ -17,10 +17,10 @@ assert __C.GLOBAL.MODEL_SAVE_DIR is not None
 __C.ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 __C.HKO_DATA_BASE_PATH = os.path.join(__C.ROOT_DIR, 'hko_data')
 
-for dirs in ['/home/stwings/data/HKO-7/radarPNG']:
+for dirs in ['/home/stwings/data/HKO-7/radarPNG','D:/Data/HKO-7/radarPNG']:
     if os.path.exists(dirs):
         __C.HKO_PNG_PATH = dirs
-for dirs in ['/home/stwings/data/HKO-7/radarPNG_mask']:
+for dirs in ['/home/stwings/data/HKO-7/radarPNG_mask','D:/Data/HKO-7/radarPNG_mask']:
     if os.path.exists(dirs):
         __C.HKO_MASK_PATH = dirs
 

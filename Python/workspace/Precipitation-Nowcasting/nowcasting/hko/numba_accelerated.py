@@ -170,7 +170,7 @@ if __name__ == '__main__':
 
     prediction = np.random.uniform(size=(10, 16, 1, 480, 480))
     truth = np.random.uniform(size=(10, 16, 1, 480, 480))
-    mask = np.random.randint(low=0, high=2, size=(10, 16, 1, 480, 480)).astype(np.bool)
+    mask = np.random.randint(low=0, high=2, size=(10, 16, 1, 480, 480)).astype(np.bool_)
     import time
 
     begin = time.time()

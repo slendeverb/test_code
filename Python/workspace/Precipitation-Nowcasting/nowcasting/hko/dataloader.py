@@ -173,8 +173,8 @@ def precompute_mask(img):
         threshold = round(cfg.HKO.ITERATOR.FILTER_RAINFALL_THRESHOLD * 255.0)
     else:
         threshold = cfg.HKO.ITERATOR.FILTER_RAINFALL_THRESHOLD
-    mask = np.zeros_like(img, dtype=np.bool)
-    mask[:] = np.broadcast_to((1 - _exclude_mask).astype(np.bool), shape=img.shape)
+    mask = np.zeros_like(img, dtype=np.bool_)
+    mask[:] = np.broadcast_to((1 - _exclude_mask).astype(np.bool_), shape=img.shape)
     mask[np.logical_and(img < threshold,
                         img > 0)] = 0
     return mask
@@ -299,7 +299,7 @@ class HKOIterator(object):
         frame_dat = np.zeros((self._seq_len, batch_size, 1, self._height, self._width),
                                   dtype=np.uint8)
         mask_dat = np.zeros((self._seq_len, batch_size, 1, self._height, self._width),
-                                 dtype=np.bool)
+                                 dtype=np.bool_)
         if batch_size==0:
             return frame_dat, mask_dat
         if self.sample_mode == "random":
