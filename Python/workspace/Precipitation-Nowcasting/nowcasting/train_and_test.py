@@ -12,7 +12,7 @@ import os
 import shutil
 import copy
 
-
+allow_test = False
 
 def train_and_test(encoder_forecaster, optimizer, criterion, lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name, probToPixel=None):
     # HKO-7 evaluater and dataloader
@@ -30,20 +30,20 @@ def train_and_test(encoder_forecaster, optimizer, criterion, lr_scheduler, batch
 
     train_loss = 0.0
     save_dir = osp.join(cfg.GLOBAL.MODEL_SAVE_DIR, folder_name)
-    if os.path.exists(save_dir):
-        shutil.rmtree(save_dir)
-    os.mkdir(save_dir)
+    if not os.path.exists(save_dir):
+        # shutil.rmtree(save_dir)
+        os.mkdir(save_dir)
     model_save_dir = osp.join(save_dir, 'models')
     log_dir = osp.join(save_dir, 'logs')
     all_scalars_file_name = osp.join(save_dir, "all_scalars.json")
     pkl_save_dir = osp.join(save_dir, 'pkl')
-    if osp.exists(all_scalars_file_name):
-        os.remove(all_scalars_file_name)
-    if osp.exists(log_dir):
-        shutil.rmtree(log_dir)
-    if osp.exists(model_save_dir):
-        shutil.rmtree(model_save_dir)
-    os.mkdir(model_save_dir)
+    # if osp.exists(all_scalars_file_name):
+    #     os.remove(all_scalars_file_name)
+    # if osp.exists(log_dir):
+    #     shutil.rmtree(log_dir)
+    if not osp.exists(model_save_dir):
+        # shutil.rmtree(model_save_dir)
+        os.mkdir(model_save_dir)
 
     writer = SummaryWriter(log_dir)
 
@@ -79,7 +79,7 @@ def train_and_test(encoder_forecaster, optimizer, criterion, lr_scheduler, batch
 
         evaluater.update(train_label_numpy, output_numpy, mask.cpu().numpy())
 
-        if itera % test_iteration_interval == 0:
+        if itera % test_iteration_interval == 0 and allow_test:
             _, _, train_csi, train_hss, _, train_mse, train_mae, train_balanced_mse, train_balanced_mae, _ = evaluater.calculate_stat()
 
             train_loss = train_loss/test_iteration_interval
