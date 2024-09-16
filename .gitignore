@@ -22,4 +22,4 @@ _IsIncrementalBuild
 *.db-wal
 *.opendb
 *.config
-
+logs
