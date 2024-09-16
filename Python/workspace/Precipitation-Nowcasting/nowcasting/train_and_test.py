@@ -12,7 +12,7 @@ import os
 import shutil
 import copy
 
-allow_test = False
+allow_test = True
 
 def train_and_test(encoder_forecaster, optimizer, criterion, lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name, probToPixel=None):
     # HKO-7 evaluater and dataloader
