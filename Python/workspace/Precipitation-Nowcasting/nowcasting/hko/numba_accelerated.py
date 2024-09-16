@@ -3,7 +3,7 @@ from numba import jit, float32, boolean, int32, float64
 from nowcasting.hko.evaluation import rainfall_to_pixel
 from nowcasting.config import cfg
 
-# @jit(float32(float32, float32, boolean))
+@jit
 def get_GDL_numba(prediction, truth, mask):
     """Accelerated version of get_GDL using numba(http://numba.pydata.org/)
 
@@ -88,7 +88,7 @@ def get_hit_miss_counts_numba(prediction, truth, mask, thresholds=None):
     return ret[:, :, :, 0], ret[:, :, :, 1], ret[:, :, :, 2], ret[:, :, :, 3]
 
 
-# @jit(int32(float32, float32, boolean, float32))
+@jit
 def _get_hit_miss_counts_numba(prediction, truth, mask, thresholds):
     seqlen, batch_size, _, height, width = prediction.shape
     threshold_num = len(thresholds)
@@ -144,7 +144,7 @@ def get_balancing_weights_numba(data, mask, base_balancing_weights=None, thresho
     return ret
 
 
-# @jit(float32(float32, boolean, float32, float32))
+@jit
 def _get_balancing_weights_numba(data, mask, base_balancing_weights, thresholds):
     seqlen, batch_size, _, height, width = data.shape
     threshold_num = len(thresholds)
