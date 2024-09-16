@@ -2,7 +2,7 @@ import torch
 import torchvision
 from torch.utils.data import DataLoader
 import torch.nn as nn
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 dataset = torchvision.datasets.CIFAR10(
     "../CIFAR10", train=False, transform=torchvision.transforms.ToTensor(), download=True

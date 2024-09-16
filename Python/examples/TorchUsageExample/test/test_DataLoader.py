@@ -1,6 +1,6 @@
 import torchvision
 from torch.utils.data import DataLoader
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 test_data = torchvision.datasets.CIFAR10("../CIFAR10", False, transform=torchvision.transforms.ToTensor())
 test_loader = DataLoader(test_data, 64, True, num_workers=0, drop_last=False)

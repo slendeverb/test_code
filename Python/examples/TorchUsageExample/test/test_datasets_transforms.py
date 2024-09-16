@@ -1,5 +1,5 @@
 import torchvision
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 dataset_transfrom = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
 
