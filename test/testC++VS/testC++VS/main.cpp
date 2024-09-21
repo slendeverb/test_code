@@ -31,7 +31,9 @@ std::string getLocalIP() {
 			}
 		}
 	}
-	_pclose(fp);
+	if (fp) {
+		_pclose(fp);
+	}
 	return ip;
 }
 
@@ -39,10 +41,18 @@ int main(int argc, char** argv) {
 	std::ofstream out;
 	try {
 		out.open("D:/Virtual Machines/share/ip.txt");
-		out << getLocalIP() << std::endl;
+		if (out.is_open()) {
+			std::cout << "file open succeeded\n";
+			out << getLocalIP() << std::endl;
+		}
+		else {
+			std::cout << "file open failed\n";
+		}
 	}
 	catch (std::exception& e) {
 		std::cout << e.what() << std::endl;
 	}
-	out.close();
+	if (out.is_open()) {
+		out.close();
+	}
 }
