@@ -1,6 +1,7 @@
+#include <iostream>
 #include <string>
 #include <fstream>
-#include <iostream>
+#include <ranges>
 
 void trimString(std::string& str) {
 	if (!str.empty()) {
