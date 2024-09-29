@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002BVS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3731488E-3934-4DEC-B4F2-D362D85DB62B}|testC\u002B\u002BVS\\testC\u002B\u002BVS.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002BVS\\testC\u002B\u002BVS\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3731488E-3934-4DEC-B4F2-D362D85DB62B}|testC\u002B\u002BVS\\testC\u002B\u002BVS.vcxproj|solutionrelative:testC\u002B\u002BVS\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E9A957AF-D395-474F-9113-941B69521FFF}|testC\u002B\u002BVS\\testC\u002B\u002BVS.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002BVS\\testC\u002B\u002BVS\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E9A957AF-D395-474F-9113-941B69521FFF}|testC\u002B\u002BVS\\testC\u002B\u002BVS.vcxproj|solutionrelative:testC\u002B\u002BVS\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
               "RelativeToolTip": "testC\u002B\u002BVS\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-20T11:23:42.657Z",
+              "WhenOpened": "2024-09-29T09:13:31.942Z",
               "EditorCaption": ""
             }
           ]
