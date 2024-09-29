@@ -1,4 +1,13 @@
 "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\slendeverb\Documents\code\test\testC++ -B C:\Users\slendeverb\Documents\code\test\testC++\cmake-build-debug
--- Configuring done (0.2s)
+-- Caffe2: CUDA detected: 12.6
+-- Caffe2: CUDA nvcc is: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin/nvcc.exe
+-- Caffe2: CUDA toolkit directory: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6
+-- Caffe2: Header version is: 12.6
+-- C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/lib/x64/nvrtc.lib shorthash is bac8224f
+-- USE_CUDNN is set to 0. Compiling without cuDNN support
+-- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+-- Autodetected CUDA architecture(s):  8.6
+-- Added CUDA NVCC flags for: -gencode;arch=compute_86,code=sm_86
+-- Configuring done (4.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug
