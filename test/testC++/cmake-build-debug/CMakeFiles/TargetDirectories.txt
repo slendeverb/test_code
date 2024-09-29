@@ -1,5 +1,0 @@
-C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/testC++.dir
-C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/package.dir
-C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/package_source.dir
-C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/slendeverb/Documents/code/test/testC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
