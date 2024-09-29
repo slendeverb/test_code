@@ -3,9 +3,9 @@
 int main(int argc,char** argv) {
     cv::Mat image=cv::imread("C:/Users/slendeverb/Pictures/Saved Pictures/117541346_p0_master1200.jpg");
     cv::Mat resized_image;
-    int resized_cols=1080*0.9;
-    int resized_rows=;
-    cv::resize(image,resized_image,cv::Size(resized_rows,resized_cols));
+    int down_width=800.0/1200*800;
+    int down_height=800;
+    cv::resize(image,resized_image,cv::Size(down_width,down_height));
     cv::imshow("image",resized_image);
     cv::waitKey();
 
