@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: slendeverb
+  Date: 2024/10/8
+  Time: 15:09
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    int num = 7 + (int) (Math.random() * 13);
+    if (num <= 13) {
+        out.println("<h1>Hello</h1>");
+    } else {
+        out.println("<h1>hello</h1>");
+    }
+%>
+
 <html lang="en">
 
 <head>
