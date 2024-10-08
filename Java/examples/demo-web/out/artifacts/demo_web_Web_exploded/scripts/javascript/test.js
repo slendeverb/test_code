@@ -1,4 +1,3 @@
-const result = "";
 const price = [2576.00, 2999.00, 3898.00, 699.00, 599.00, 699.00];
 const product = ["iPhone 6 32GB 金色 移动联通电信4G",
     "OPPO R11 全网通 黑色版",

@@ -17,7 +17,7 @@
 
 <body>
 <form name="myForm" method="post" action="">
-    <table>
+    <table align="center" border="1">
         <caption>手机批发业务-商品备选区</caption>
         <tr>
             <td>
