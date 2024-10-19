@@ -1,9 +1,10 @@
 import std;
+using namespace std;
 
 class Solution {
 public:
 	int duplicateNumbersXOR(std::vector<int>& nums) {
-		std::unordered_set<int, int> s;
+		std::unordered_set<int> s;
 		int ans = 0;
 		for (const auto& x : nums) {
 			if (s.contains(x)) {
