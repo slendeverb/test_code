@@ -2,7 +2,7 @@
 
 class Solution {
     public:
-    int dulplicateNumbersXOR(std::vector<int> &&nums) {
+    static int dulplicateNumbersXOR(std::vector<int> &&nums) {
         std::unordered_set<int> set;
         int answer = 0;
         for(const auto &num : nums) {
@@ -17,11 +17,10 @@ class Solution {
 };
 
 int main(int argc,char** argv) {
-    auto start=std::chrono::high_resolution_clock::now();
-    auto obj=Solution{};
-    auto ans=obj.dulplicateNumbersXOR({1,1,2,3});
+    const auto start=std::chrono::high_resolution_clock::now();
+    auto ans=Solution::dulplicateNumbersXOR({1,1,2,3});
     std::println("{}",ans);
-    auto end=std::chrono::high_resolution_clock::now();
+    const auto end=std::chrono::high_resolution_clock::now();
     auto duration=std::chrono::duration_cast<std::chrono::microseconds>(end-start);
     std::println("Time elapsed: {}",duration);
 }
