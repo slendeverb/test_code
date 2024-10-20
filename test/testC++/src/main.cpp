@@ -2,23 +2,23 @@
 
 class Solution {
     public:
-    static int dulplicateNumbersXOR(std::vector<int> &&nums) {
-        std::unordered_set<int> set;
-        int answer = 0;
-        for(const auto &num : nums) {
-            if(set.contains(num)) {
-                answer^=num;
-            } else {
-                set.insert(num);
-            }
+    int smallestRangeII(std::vector<int>& nums, int k) {
+        std::ranges::sort(nums);
+        int ans=nums.back()-nums.front();
+        for(int i=1;i<nums.size();i++) {
+            int mx=std::max(nums[i-1]+k,nums.back()-k);
+            int mn=std::min(nums.front()+k,nums[i]-k);
+            ans=std::min(ans,mx-mn);
         }
-        return answer;
+        return ans;
     }
 };
 
 int main(int argc,char** argv) {
     const auto start=std::chrono::high_resolution_clock::now();
-    auto ans=Solution::dulplicateNumbersXOR({1,1,2,3});
+    std::vector<int> nums{7,8,8,5,2};
+    int k{4};
+    auto ans=Solution{}.smallestRangeII(nums,k);
     std::println("{}",ans);
     const auto end=std::chrono::high_resolution_clock::now();
     auto duration=std::chrono::duration_cast<std::chrono::microseconds>(end-start);
