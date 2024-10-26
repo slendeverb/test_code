@@ -1,31 +1,12 @@
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
-        MyClass myClass1=MyClass.getInstance();
-        MyClass myClass2=MyClass.getInstance();
-        System.out.println(myClass1);
-        System.out.println(myClass2);
+        long startTime = System.currentTimeMillis();
+        BigInteger bigInteger=new BigInteger("1");
+        System.out.println(bigInteger.shiftLeft(10000000));
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+        System.out.println(elapsedTime);
     }
-}
-
-class MyClass{
-    private MyClass(){
-
-    }
-
-    private MyClass(MyClass myClass){
-
-    }
-
-    public static MyClass getInstance(){
-        if(myClass==null){
-            synchronized (MyClass.class){
-                if(myClass==null){
-                    myClass=new MyClass();
-                }
-            }
-        }
-        return myClass;
-    }
-
-    private static volatile MyClass myClass;
 }
