@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|solutionrelative:QtCalculator\\QtCalculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|solutionrelative:QtCalculator\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95FC1DB4-8283-42EE-8330-E377B3BFF4C5}|QtCalculator\\QtCalculator.vcxproj|solutionrelative:QtCalculator\\QtCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QtCalculator.cpp",
+              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.cpp",
+              "RelativeDocumentMoniker": "QtCalculator\\QtCalculator.cpp",
+              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.cpp",
+              "RelativeToolTip": "QtCalculator\\QtCalculator.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-02T11:58:39.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QtCalculator.h",
+              "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.h",
+              "RelativeDocumentMoniker": "QtCalculator\\QtCalculator.h",
+              "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\QtCalculator.h",
+              "RelativeToolTip": "QtCalculator\\QtCalculator.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-02T11:58:22.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\C\u002B\u002B\\examples\\QtCalculator\\QtCalculator\\main.cpp",
               "RelativeDocumentMoniker": "QtCalculator\\main.cpp",
