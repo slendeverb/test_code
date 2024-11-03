@@ -1,8 +1,7 @@
 #pragma once
 
-#include <QtWidgets/QWidget>
+#include <QWidget>
 #include "ui_DemoQt.h"
-#include <QMainWindow>
 #include <QProcess>
 #include <QButtonGroup>
 #include <QMessageBox>
@@ -26,8 +25,10 @@ public:
 	~DemoQt();
 
 private slots:
-
+	void onConnectPushButtonClicked();
+	void onCancelPushButtonClicked();
 
 private:
 	Ui::DemoQtClass* ui;
+	QTcpSocket* socket;
 };
