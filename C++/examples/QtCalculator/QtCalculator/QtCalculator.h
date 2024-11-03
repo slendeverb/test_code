@@ -8,18 +8,18 @@
 
 class QtCalculator : public QMainWindow
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    QtCalculator(QWidget *parent = nullptr);
-    ~QtCalculator();
-    void initUI();
+	QtCalculator(QWidget* parent = nullptr);
+	~QtCalculator();
+	void initUI();
 
 public slots:
-    void onButtonGroupClicked(QAbstractButton* btn);
+	void onButtonGroupClicked(QAbstractButton* btn);
 
 private:
-    Ui::QtCalculatorClass* ui;
-    QButtonGroup* buttonGroup;
-    QVector<QVariant> vec;
+	Ui::QtCalculatorClass* ui;
+	QButtonGroup* buttonGroup;
+	QVector<QVariant> vec;
 };
