@@ -1,9 +1,7 @@
-import java.awt.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        TestForm testForm = new TestForm();
-        testForm.setVisible(true);
+        
     }
 }

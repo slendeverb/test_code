@@ -1,12 +1,16 @@
-﻿namespace test
+﻿using System.Numerics;
+
+namespace test
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
-            var str = Console.ReadLine();
-            Console.WriteLine(str);
+            var start = DateTime.Now;
+            BigInteger bigInteger = BigInteger.Parse("1");
+            Console.WriteLine(bigInteger << 100_0000);
+            var end = DateTime.Now;
+            Console.WriteLine(end - start);
         }
     }
 }
