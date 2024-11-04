@@ -21,8 +21,8 @@ void DemoQt::onConnectPushButtonClicked() {
 	socket->connectToHost(QHostAddress(ip), port.toUShort());
 	connect(socket, &QTcpSocket::connected, [this] {
 		QMessageBox::information(this, "连接提示", "连接成功");
-		});
+	});
 	connect(socket, &QTcpSocket::disconnected, [this] {
 		QMessageBox::warning(this, "连接提示", "断开连接");
-		});
+	});
 }

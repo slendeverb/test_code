@@ -24,6 +24,9 @@ public:
 	DemoQt(QWidget* parent = nullptr);
 	~DemoQt();
 
+signals:
+
+
 private slots:
 	void onConnectPushButtonClicked();
 	void onCancelPushButtonClicked();

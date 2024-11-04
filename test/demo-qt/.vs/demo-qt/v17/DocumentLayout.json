@@ -46,7 +46,8 @@
               "RelativeToolTip": "demo-qt\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-03T10:43:04.153Z"
+              "WhenOpened": "2024-11-03T10:43:04.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,9 +57,10 @@
               "RelativeDocumentMoniker": "demo-qt\\DemoQt.h",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\DemoQt.h",
               "RelativeToolTip": "demo-qt\\DemoQt.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-03T11:23:09.656Z"
+              "WhenOpened": "2024-11-03T11:23:09.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,7 +70,7 @@
               "RelativeDocumentMoniker": "demo-qt\\DemoQt.cpp",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\DemoQt.cpp",
               "RelativeToolTip": "demo-qt\\DemoQt.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-03T11:23:05.715Z",
               "EditorCaption": ""
