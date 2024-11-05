@@ -1,4 +1,3 @@
-<%@ page import="beans.TestBean" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
     <head>
