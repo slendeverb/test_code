@@ -28,10 +28,9 @@ signals:
 
 
 private slots:
-	void onConnectPushButtonClicked();
-	void onCancelPushButtonClicked();
+
 
 private:
 	Ui::DemoQtClass* ui;
-	QTcpSocket* socket;
+
 };
