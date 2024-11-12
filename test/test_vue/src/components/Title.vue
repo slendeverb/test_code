@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <div class="app">
+  <div>
     <h2 class="title" @click="changeBackgroundColor">{{title}}</h2>
   </div>
 </template>
