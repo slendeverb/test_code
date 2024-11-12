@@ -1,7 +1,13 @@
 <script setup lang="js" name="Title">
   function changeBackgroundColor(){
-    var title = document.getElementsByClassName("title")[0];
-    title.setAttribute("style", "background-color: " + "orange");
+    const title = document.getElementsByClassName("title")[0];
+    const backgroundColor=document.defaultView.getComputedStyle(title).backgroundColor;
+    console.log(backgroundColor);
+    if(backgroundColor==="rgb(135, 206, 235)"){
+      title.setAttribute("style", "background-color: orange");
+    }else if(backgroundColor==="rgb(255, 165, 0)"){
+      title.setAttribute("style", "background-color: skyblue");
+    }
   }
   defineProps(["title"])
 </script>
