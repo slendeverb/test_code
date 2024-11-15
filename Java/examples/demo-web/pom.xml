@@ -41,4 +41,24 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>UTF-8</encoding>
+                        <compilerArguments>
+                            <verbose />
+                            <bootclasspath>${java.home}\jre\lib\rt.jar;${java.home}\jre\lib\jce.jar</bootclasspath>
+                        </compilerArguments>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
