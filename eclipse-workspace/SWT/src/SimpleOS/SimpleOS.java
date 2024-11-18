@@ -18,6 +18,7 @@ import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.custom.StyledText;
+import org.eclipse.swt.widgets.TabItem;
 
 public class SimpleOS {
 	protected OS os=OS.getInstance();

@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 import javax.swing.border.*;
@@ -14,6 +15,10 @@ import javax.swing.border.*;
 public class TestForm extends JFrame {
     public TestForm() {
         initComponents();
+    }
+
+    private void cancelButtonMouseClicked(MouseEvent e) {
+        this.dispose();
     }
 
     private void initComponents() {
@@ -63,6 +68,12 @@ public class TestForm extends JFrame {
                 cancelButton.setText(bundle.getString("cancelButton.text"));
                 cancelButton.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1", Font.PLAIN, 12));
                 cancelButton.setBackground(Color.white);
+                cancelButton.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        cancelButtonMouseClicked(e);
+                    }
+                });
                 buttonBar.add(cancelButton, new GridBagConstraints(2, 0, 1, 1, 0.0, 0.0,
                     GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                     new Insets(0, 0, 0, 0), 0, 0));

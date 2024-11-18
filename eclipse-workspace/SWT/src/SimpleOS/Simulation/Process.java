@@ -16,10 +16,6 @@ public class Process implements Serializable {
 		blockList.add(this);
 	}
 	
-	public void request(OS os,String name,int num) {
-		
-	}
-	
 	public PCB pcb;
 }
 
