@@ -24,7 +24,7 @@ public class TestForm extends JFrame {
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
         ResourceBundle bundle = ResourceBundle.getBundle("form");
-        dialogPane = new JPanel();
+        dialogPanel = new JPanel();
         contentPanel = new JPanel();
         buttonBar = new JPanel();
         okButton = new JButton();
@@ -35,18 +35,33 @@ public class TestForm extends JFrame {
         var contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 
-        //======== dialogPane ========
+        //======== dialogPanel ========
         {
-            dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
-            dialogPane.setBackground(Color.white);
-            dialogPane.setLayout(new BorderLayout());
+            dialogPanel.setBorder(new EmptyBorder(12, 12, 12, 12));
+            dialogPanel.setBackground(Color.white);
+            dialogPanel.setLayout(new BorderLayout());
 
             //======== contentPanel ========
             {
                 contentPanel.setBackground(Color.white);
-                contentPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 200, 100));
+                contentPanel.setLayout(null);
+
+                {
+                    // compute preferred size
+                    Dimension preferredSize = new Dimension();
+                    for(int i = 0; i < contentPanel.getComponentCount(); i++) {
+                        Rectangle bounds = contentPanel.getComponent(i).getBounds();
+                        preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
+                        preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+                    }
+                    Insets insets = contentPanel.getInsets();
+                    preferredSize.width += insets.right;
+                    preferredSize.height += insets.bottom;
+                    contentPanel.setMinimumSize(preferredSize);
+                    contentPanel.setPreferredSize(preferredSize);
+                }
             }
-            dialogPane.add(contentPanel, BorderLayout.CENTER);
+            dialogPanel.add(contentPanel, BorderLayout.CENTER);
 
             //======== buttonBar ========
             {
@@ -78,16 +93,16 @@ public class TestForm extends JFrame {
                     GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                     new Insets(0, 0, 0, 0), 0, 0));
             }
-            dialogPane.add(buttonBar, BorderLayout.SOUTH);
+            dialogPanel.add(buttonBar, BorderLayout.SOUTH);
         }
-        contentPane.add(dialogPane, BorderLayout.CENTER);
+        contentPane.add(dialogPanel, BorderLayout.CENTER);
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-    private JPanel dialogPane;
+    private JPanel dialogPanel;
     private JPanel contentPanel;
     private JPanel buttonBar;
     private JButton okButton;

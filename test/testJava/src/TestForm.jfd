@@ -9,13 +9,10 @@ new FormModel {
 			name: "this"
 			"background": new java.awt.Color( 255, 255, 255, 255 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
-				name: "dialogPane"
+				name: "dialogPanel"
 				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
 				"background": new java.awt.Color( 255, 255, 255, 255 )
-				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
-					"hgap": 200
-					"vgap": 100
-				} ) {
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 					name: "contentPanel"
 					"background": new java.awt.Color( 255, 255, 255, 255 )
 				}, new FormLayoutConstraints( class java.lang.String ) {

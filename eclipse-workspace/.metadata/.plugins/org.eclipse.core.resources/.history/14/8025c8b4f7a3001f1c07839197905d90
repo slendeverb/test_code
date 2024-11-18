@@ -1,7 +1,0 @@
-package bean;
-
-public class TestBean {
-	public TestBean() {
-		super();
-	}
-}
