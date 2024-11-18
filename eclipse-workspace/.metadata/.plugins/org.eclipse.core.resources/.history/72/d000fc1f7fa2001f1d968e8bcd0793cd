@@ -1,0 +1,27 @@
+package SimpleOS.Simulation;
+
+import java.util.ArrayList;
+
+public class Monitor {
+	public Monitor() {
+		sources.add(new Source(3, "Source A"));
+		sources.add(new Source(4, "Source B"));
+		sources.add(new Source(5, "Source C"));
+	}
+	
+	private ArrayList<Source> sources=new ArrayList<Source>();
+}
+
+class Semaphore{
+	
+}
+
+class Source{
+	public int num;
+	public String name;
+	
+	public Source(int num,String name) {
+		this.num=num;
+		this.name=name;
+	}
+}

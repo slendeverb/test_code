@@ -1,0 +1,7 @@
+package SimpleOS.Simulation;
+
+public class Monitor {
+	public Monitor() {
+		
+	}
+}

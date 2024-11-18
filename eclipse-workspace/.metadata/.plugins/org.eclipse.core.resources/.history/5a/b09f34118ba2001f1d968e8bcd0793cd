@@ -1,0 +1,58 @@
+package SimpleOS.Simulation;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+
+public class OS {
+	
+	private OS() {}
+	
+	public static OS getInstance() {
+		return Singleton.INSTANCE.getInstance();
+	}
+	
+	private enum Singleton{
+		INSTANCE;
+		private OS instance;
+		Singleton() {
+			instance=new OS();
+		}
+		public OS getInstance() {
+			return instance;
+		}
+	}
+	
+	public static String run() {
+		return "Operating System Running...";
+	}
+	
+	public static String stop() {
+		readyQueue.clear();
+		blockQueue.clear();
+		return "Operating System Stopping...";
+	}
+	
+	public static void block(Process process) {
+		if(readyQueue.isEmpty()) {
+			return;
+		}
+		readyQueue.remove(process);
+		process.block(blockQueue);
+	}
+	
+	public static void wakeup() {
+		if(blockQueue.isEmpty()) {
+			return;
+		}
+		Process process=blockQueue.getFirst();
+		blockQueue.remove(process);
+		readyQueue.add(process);
+	}
+
+	private static long systemTime=0;
+	private static LinkedList<Process> blockQueue=new LinkedList<Process>();
+	private static LinkedList<Process> readyQueue=new LinkedList<Process>();
+	private static LinkedList<Process> suspendQueue=new LinkedList<Process>();
+	private static PriorityQueue<Process> priorityQueue;
+}

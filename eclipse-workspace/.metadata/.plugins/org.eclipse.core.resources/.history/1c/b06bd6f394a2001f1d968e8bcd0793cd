@@ -1,0 +1,5 @@
+package SimpleOS.Simulation;
+
+public class PeriodicProcess extends Process {
+	
+}

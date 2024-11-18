@@ -1,0 +1,21 @@
+package SimpleOS.Simulation;
+
+import java.io.Serializable;
+
+public class Process implements Serializable {
+	public Process() {}
+	
+	public Process(int id,int priority,int deadline,int task,int memoryNeed) {
+		this.id=id;
+		this.priority=priority;
+		this.deadline=deadline;
+		this.memoryNeed=memoryNeed;
+	}
+	
+	private int id=1;
+	private int priority=1;
+	private int memoryNeed;
+	private int arriveTime=0;
+	private int task;
+	private int deadline;
+}

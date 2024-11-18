@@ -1,0 +1,7 @@
+package SimpleOS.Simulation.Sync;
+
+public class Monitor {
+	public Monitor() {
+		
+	}
+}

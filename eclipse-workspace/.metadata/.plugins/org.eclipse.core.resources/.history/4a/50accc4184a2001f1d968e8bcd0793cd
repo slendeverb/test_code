@@ -1,0 +1,13 @@
+package SimpleOS.Simulation.Sync;
+
+import java.util.ArrayList;
+
+import SimpleOS.Simulation.Process;
+
+public class Semaphore {
+	public Semaphore(int value,ArrayList<Process> blockList) {
+		
+	}
+	
+	public int value;
+}

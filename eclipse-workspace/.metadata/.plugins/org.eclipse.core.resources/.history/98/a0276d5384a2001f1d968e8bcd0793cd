@@ -1,0 +1,14 @@
+package SimpleOS.Simulation.Sync;
+
+import java.util.ArrayList;
+
+import SimpleOS.Simulation.Process;
+import SimpleOS.Simulation.Source;
+
+public class Semaphore {
+	public Semaphore(int value,ArrayList<Process> blockList) {
+		
+	}
+	
+	private Source source;
+}

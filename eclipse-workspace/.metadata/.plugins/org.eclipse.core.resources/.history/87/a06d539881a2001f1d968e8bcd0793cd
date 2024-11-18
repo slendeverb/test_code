@@ -1,0 +1,19 @@
+package SimpleOS.Simulation;
+
+import java.util.ArrayList;
+
+public class Monitor {
+	public Monitor() {
+		
+	}
+}
+
+class Source{
+	public int num;
+	public String name;
+	
+	public Source(int num,String name) {
+		this.num=num;
+		this.name=name;
+	}
+}

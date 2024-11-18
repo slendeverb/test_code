@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\slendeverb\Documents\code\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3558212379.index
+\Web\src\main\java
+C:\Users\slendeverb\eclipse\java-2024-03\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3558212379.index
+\Web\src\main\java

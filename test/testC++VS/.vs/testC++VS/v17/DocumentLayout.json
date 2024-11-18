@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,6 +29,10 @@
               "Name": "ST:0:0:{2d72bcf2-4e9d-5f31-8118-3e9c6e5b1892}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
@@ -36,7 +40,7 @@
               "RelativeDocumentMoniker": "testC\u002B\u002BVS\\main.cpp",
               "ToolTip": "C:\\Users\\slendeverb\\Documents\\code\\test\\testC\u002B\u002BVS\\testC\u002B\u002BVS\\main.cpp",
               "RelativeToolTip": "testC\u002B\u002BVS\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-29T09:13:31.942Z",
               "EditorCaption": ""
