@@ -19,6 +19,9 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.TabItem;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Group;
 
 public class SimpleOS {
 	protected OS os=OS.getInstance();
@@ -38,6 +41,7 @@ public class SimpleOS {
 	private TableColumn tblclmnPageNumber;
 	private TableColumn tblclmnFrameNumber;
 	private StyledText styledTextLog;
+	private Table tableSuspend;
 
 	/**
 	 * Launch the application.
@@ -240,8 +244,21 @@ public class SimpleOS {
 		Menu menuSetting = new Menu(mntmSetting);
 		mntmSetting.setMenu(menuSetting);
 		
-		styledTextLog = new StyledText(shell, SWT.BORDER | SWT.READ_ONLY | SWT.V_SCROLL | SWT.WRAP | SWT.H_SCROLL);
+		styledTextLog = new StyledText(shell, SWT.BORDER | SWT.READ_ONLY | SWT.WRAP | SWT.V_SCROLL);
 		styledTextLog.setBounds(10, 570, 442, 328);
+		
+		Label lblSuspend = new Label(shell, SWT.NONE);
+		lblSuspend.setBounds(278, 295, 76, 20);
+		lblSuspend.setText("挂起队列");
+		
+		tableSuspend = new Table(shell, SWT.BORDER | SWT.FULL_SELECTION);
+		tableSuspend.setBounds(278, 321, 110, 196);
+		tableSuspend.setHeaderVisible(true);
+		tableSuspend.setLinesVisible(true);
+		
+		TableColumn tblclmnSuspendProcessID = new TableColumn(tableSuspend, SWT.NONE);
+		tblclmnSuspendProcessID.setWidth(100);
+		tblclmnSuspendProcessID.setText("进程ID");
 
 	}
 }

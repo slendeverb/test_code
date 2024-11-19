@@ -3,6 +3,8 @@ package SimpleOS.Simulation;
 import java.io.Serializable;
 import java.util.LinkedList;
 
+import SimpleOS.Simulation.Strategy.Strategy;
+
 public class Process implements Serializable {
 	public Process(int id,int priority,int deadline,int task,int memoryNeed) {
 		pcb=new PCB(id, priority, deadline, task, memoryNeed);
@@ -17,6 +19,7 @@ public class Process implements Serializable {
 	}
 	
 	public PCB pcb;
+	protected Strategy strategy=null;
 }
 
 enum State{

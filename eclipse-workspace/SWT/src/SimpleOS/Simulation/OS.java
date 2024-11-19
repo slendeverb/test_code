@@ -23,19 +23,19 @@ public class OS {
 		}
 	}
 	
-	public static String start() {
+	public String start() {
 		return "Operating System Running...";
 	}
 	
-	public static String stop() {
+	public String stop() {
 		return "Operating System Stopping...";
 	}
 	
-	public static void block(Process process,LinkedList<Process> blockQueueA) {
+	public void block(Process process,LinkedList<Process> blockQueueA) {
 		process.block(blockQueueA);
 	}
 	
-	public static void wakeupA(LinkedList<Process> blockQueueA) {
+	public void wakeupA(LinkedList<Process> blockQueueA) {
 		if(blockQueueA.isEmpty()) {
 			return;
 		}
@@ -44,7 +44,7 @@ public class OS {
 		readyQueueA.add(process);
 	}
 	
-	public static void wakeupS(LinkedList<Process> blockQueueS){
+	public void wakeupS(LinkedList<Process> blockQueueS){
 		if(blockQueueS.isEmpty()) {
 			return;
 		}
@@ -53,27 +53,27 @@ public class OS {
 		readyQueueS.add(process);
 	}
 	
-	public static void suspendR() {
+	public void suspendR() {
 		
 	}
 	
-	public static void suspendB() {
+	public void suspendB() {
 		
 	}
 	
-	public static void activeR() {
+	public void activeR() {
 		
 	}
 	
-	public static void activeB() {
+	public void activeB() {
 		
 	}
 
-	private static long systemTime=0;
-	private static PriorityQueue<Process> readyQueueA=new PriorityQueue<Process>();
-	private static PriorityQueue<Process> readyQueueS=new PriorityQueue<Process>();
-	private static LinkedList<Process> blockQueueA=new LinkedList<Process>();
-	private static LinkedList<Process> blockQueueS=new LinkedList<Process>();
-	private static LinkedList<Process> suspendQueueR=new LinkedList<Process>();
-	private static LinkedList<Process> suspendQueueB=new LinkedList<Process>();
+	private long systemTime=0;
+	private PriorityQueue<Process> readyQueueA=new PriorityQueue<Process>();
+	private PriorityQueue<Process> readyQueueS=new PriorityQueue<Process>();
+	private LinkedList<Process> blockQueueA=new LinkedList<Process>();
+	private LinkedList<Process> blockQueueS=new LinkedList<Process>();
+	private LinkedList<Process> suspendQueueR=new LinkedList<Process>();
+	private LinkedList<Process> suspendQueueB=new LinkedList<Process>();
 }

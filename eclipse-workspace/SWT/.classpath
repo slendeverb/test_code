@@ -17,10 +17,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/slendeverb/.p2/pool/plugins/org.eclipse.ui.workbench_3.131.100.v20240221-2107.jar" sourcepath="C:/Users/slendeverb/.p2/pool/plugins/org.eclipse.ui.workbench_3.131.100.v20240221-2107.jar"/>
 	<classpathentry exported="true" kind="lib" path="JBDC/mysql-connector-j-8.0.33.jar"/>
 	<classpathentry exported="true" kind="lib" path="JBDC/mssql-jdbc-12.6.3.jre11.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-17">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -3,4 +3,10 @@
 //
 
 #pragma once
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <ranges>
+#include <chrono>
+#include <print>
