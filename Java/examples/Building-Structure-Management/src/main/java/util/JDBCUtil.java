@@ -6,7 +6,7 @@ public class JDBCUtil {
 
     private static String url="jdbc:mysql://localhost:3306/bsmm";
 
-    private static String pwd="QHB.12345";
+    private static String pwd="040629";
     private static String username="root";
 
 

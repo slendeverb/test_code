@@ -9,19 +9,12 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.swt.widgets.Text;
-
 import SimpleOS.Simulation.OS;
-import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.custom.StyledText;
-import org.eclipse.swt.widgets.TabItem;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Group;
 
 public class SimpleOS {
 	protected OS os=OS.getInstance();

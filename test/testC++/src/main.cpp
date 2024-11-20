@@ -1,16 +1,48 @@
 #include <iostream>
 #include <vector>
 #include <numeric>
-#include <ranges>
+using namespace std;
 
-auto maximumWealth(const auto& accounts)->int {
-    return std::ranges::max(accounts
-        |std::views::transform([](const auto& account){
-            return std::reduce(account.begin(),account.end());
-        }));
-}
+class Solution {
+public:
+    vector<int> shortestDistanceAfterQueries(int n, vector<vector<int>>& queries) {
+        std::vector<int> fa(n-1);
+        std::iota(fa.begin(),fa.end(),0);
+
+        auto find=[&](int x)->int{
+            int rt=x;
+            while(fa[rt]!=rt){
+                rt=fa[rt];
+            }
+            while(fa[x]!=rt){
+                int tmp=fa[x];
+                fa[x]=rt;
+                x=tmp;
+            }
+            return rt;
+        };
+
+        std::vector<int> ans(queries.size());
+        int cnt=n-1;
+        for(int qi=0;qi<queries.size();qi++){
+            int l=queries[qi][0],r=queries[qi][1]-1;
+            int fr=find(r);
+            for(int i=find(l);i<r;i=find(i+1)){
+                fa[i]=r;
+                cnt--;
+            }
+            ans[qi]=cnt;
+        }
+        return ans;
+    }
+};
 
 int main(int argc,char** argv) {
-    std::vector<std::vector<int>> accounts{{1,2,3},{4,5,6},{7,8,9}};
-    std::cout<<maximumWealth(accounts)<<"\n";
+    int n{4};
+    std::vector<std::vector<int>> queries{{0,3},{0,2}};
+    auto ans=Solution{}.shortestDistanceAfterQueries(n,queries);
+    for(const auto& x:ans){
+        std::cout<<x<<" ";
+    }
+    std::cout<<"\n";
 }
