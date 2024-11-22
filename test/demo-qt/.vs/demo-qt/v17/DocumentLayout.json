@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|solutionrelative:demo-qt\\DemoQt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\DemoQt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|solutionrelative:demo-qt\\DemoQt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|solutionrelative:demo-qt\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\DemoQt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{510D2F05-C98A-4D29-B383-9BDFB050962C}|demo-qt\\demo-qt.vcxproj|solutionrelative:demo-qt\\DemoQt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\main.cpp",
               "RelativeDocumentMoniker": "demo-qt\\main.cpp",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DemoQt.h",
               "DocumentMoniker": "C:\\Users\\slendeverb\\Documents\\code\\test\\demo-qt\\demo-qt\\DemoQt.h",
               "RelativeDocumentMoniker": "demo-qt\\DemoQt.h",
