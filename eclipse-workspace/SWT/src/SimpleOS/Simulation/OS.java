@@ -3,6 +3,9 @@ package SimpleOS.Simulation;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
+import SimpleOS.Simulation.Process.Process;
+import SimpleOS.Simulation.Process.State;
+
 public class OS {
 	private OS() {}
 	

@@ -1,6 +1,6 @@
 package SimpleOS.Simulation.Sync;
 
-import SimpleOS.Simulation.Source;
+import SimpleOS.Simulation.Source.Source;
 
 public class Monitor {
 	public Monitor(Source source) {

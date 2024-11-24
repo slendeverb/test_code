@@ -1,4 +1,4 @@
-package SimpleOS.Simulation;
+package SimpleOS.Simulation.Source;
 
 public class Source {
 	public int num;
