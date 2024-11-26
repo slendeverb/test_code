@@ -2,11 +2,13 @@ package SimpleOS.Simulation.Process;
 
 import java.util.LinkedList;
 
-import SimpleOS.Simulation.Strategy.Strategy;
+import SimpleOS.Simulation.OS;
+import SimpleOS.Simulation.Memory.PageTable;
 
 public class Process {
-	public Process(int id,int priority,int deadline,int task,int memoryNeed) {
+	public Process(int id,int priority,int deadline,int task,int memoryNeed,OS os) {
 		pcb=new PCB(id, priority, deadline, task, memoryNeed);
+		pageTable=new PageTable(memoryNeed,os);
 	}
 	
 	public void block(LinkedList<Process> blockList) {
@@ -18,5 +20,5 @@ public class Process {
 	}
 	
 	public PCB pcb;
-	protected Strategy strategy=null;
+	public PageTable pageTable;
 }

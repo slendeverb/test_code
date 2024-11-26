@@ -1,5 +1,3 @@
 package SimpleOS.Simulation.Memory;
 
-public class Frame {
-	
-}
+public class Frame extends Segment {}

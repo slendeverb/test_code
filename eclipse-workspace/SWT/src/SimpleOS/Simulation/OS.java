@@ -3,6 +3,8 @@ package SimpleOS.Simulation;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
+import SimpleOS.Simulation.Memory.Memory;
+import SimpleOS.Simulation.Memory.Storage;
 import SimpleOS.Simulation.Process.Process;
 import SimpleOS.Simulation.Process.State;
 
@@ -34,11 +36,11 @@ public class OS {
 		return "Operating System Stopping...";
 	}
 	
-	public void block(Process process,LinkedList<Process> blockQueueA) {
+	public void block(Process process) {
 		process.block(blockQueueA);
 	}
 	
-	public void wakeupA(LinkedList<Process> blockQueueA) {
+	public void wakeupA() {
 		if(blockQueueA.isEmpty()) {
 			return;
 		}
@@ -47,7 +49,7 @@ public class OS {
 		readyQueueA.add(process);
 	}
 	
-	public void wakeupS(LinkedList<Process> blockQueueS){
+	public void wakeupS(){
 		if(blockQueueS.isEmpty()) {
 			return;
 		}
@@ -72,11 +74,13 @@ public class OS {
 		
 	}
 
-	private long systemTime=0;
-	private PriorityQueue<Process> readyQueueA=new PriorityQueue<Process>();
-	private PriorityQueue<Process> readyQueueS=new PriorityQueue<Process>();
-	private LinkedList<Process> blockQueueA=new LinkedList<Process>();
-	private LinkedList<Process> blockQueueS=new LinkedList<Process>();
-	private LinkedList<Process> suspendQueueR=new LinkedList<Process>();
-	private LinkedList<Process> suspendQueueB=new LinkedList<Process>();
+	public long systemTime;
+	public Memory memory;
+	public Storage storage;
+	public PriorityQueue<Process> readyQueueA;
+	public PriorityQueue<Process> readyQueueS;
+	public LinkedList<Process> blockQueueA;
+	public LinkedList<Process> blockQueueS;
+	public LinkedList<Process> suspendQueueR;
+	public LinkedList<Process> suspendQueueB;
 }
