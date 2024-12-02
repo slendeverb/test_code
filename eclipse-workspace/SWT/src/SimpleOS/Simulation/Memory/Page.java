@@ -8,14 +8,14 @@ public class Page {
 	public boolean inMemory;
 	public int accessField;
 	public boolean modified;
-	public int storageNumber;
+	public int storageAddress;
 	
-	public Page(int id,int frameNumber,boolean inMemory,int accessField,boolean modified,int storageNumber) {
+	public Page(int id,int frameNumber,boolean inMemory,int accessField,boolean modified,int storageAddress) {
 		this.id=id;
 		this.frameNumber=frameNumber;
 		this.inMemory=inMemory;
 		this.accessField=accessField;
 		this.modified=modified;
-		this.storageNumber=storageNumber;
+		this.storageAddress=storageAddress;
 	}
 }
