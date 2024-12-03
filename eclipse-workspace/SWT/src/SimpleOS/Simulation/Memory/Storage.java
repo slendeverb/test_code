@@ -17,6 +17,7 @@ public class Storage {
 		int idx=0;
 		for(int i=1;i<=swapAreaSize;i<<=1) {
 			nodeSize.add(i);
+			idx++;
 		}
 		freeNodes=IntStream.range(0, idx+1)
 				.mapToObj(i -> new ArrayList<Node>())

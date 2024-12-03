@@ -54,21 +54,21 @@ public class OS {
 		process.block(blockQueueA);
 	}
 	
-	public void wakeupA() {
-		if(blockQueueA.isEmpty()) {
+	public void wakeupA(Process process) {
+		if(!blockQueueA.contains(process)) {
 			return;
 		}
-		Process process=blockQueueA.removeFirst();
 		process.pcb.state=State.READYA;
+		blockQueueA.remove(process);
 		readyQueueA.add(process);
 	}
 	
-	public void wakeupS(){
-		if(blockQueueS.isEmpty()) {
+	public void wakeupS(Process process){
+		if(!blockQueueS.contains(process)) {
 			return;
 		}
-		Process process=blockQueueS.removeFirst();
 		process.pcb.state=State.READYS;
+		blockQueueS.remove(process);
 		readyQueueS.add(process);
 	}
 	
@@ -106,7 +106,7 @@ public class OS {
 		ArrayList<Page> pages=pageTable.pages;
 		for(int i=0;i<pages.size();i++) {
 			Page page=pages.get(i);
-			if(page.frameNumber==-1) {
+			if(!page.inMemory) {
 				continue;
 			}
 			try {
@@ -115,6 +115,7 @@ public class OS {
 					throw new Exception("Swap Area is full.");
 				}
 				memory.recycle(page.frameNumber);
+				page.inMemory=false;
 				page.frameNumber=-1;
 				page.storageAddress=storageAddress;
 			} catch (Exception e) {}

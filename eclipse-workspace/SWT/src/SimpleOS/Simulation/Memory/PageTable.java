@@ -1,6 +1,8 @@
 package SimpleOS.Simulation.Memory;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+
 import SimpleOS.Simulation.OS;
 import SimpleOS.Simulation.Register.TLB;
 
@@ -31,9 +33,10 @@ public class PageTable {
 		}
 		TLB tlb=os.tlb;
 		int minSize=Math.min(pageNumber, TLB.Size);
-		ArrayList<Page> tlbPages=tlb.pages;
+		HashMap<Integer, Page> tlbPages=tlb.pages;
 		for(int i=0;i<minSize;i++) {
-			tlbPages.add(pages.get(i));
+			Page page=pages.get(i);
+			tlbPages.put(page.id, page);
 		}
 	}
 }
