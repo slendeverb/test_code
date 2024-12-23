@@ -19,12 +19,12 @@ public class Storage {
 			nodeSize.add(i);
 			idx++;
 		}
-		freeNodes=IntStream.range(0, idx+1)
+		freeNodes=IntStream.range(0, idx)
 				.mapToObj(i -> new ArrayList<Node>())
 				.collect(Collectors.toCollection(ArrayList::new));
-		freeNodes.get(idx).add(new Node(-1,swapAreaSize,0));
+		freeNodes.get(idx-1).add(new Node(-1,swapAreaSize,0));
 		
-		fileArea=new FileArea(swapAreaSize,fileAreaSize);
+		fileArea=new FileArea(fileAreaSize);
 	}
 	
 	public Integer alloc(int processId, int allocSize) {
@@ -102,7 +102,7 @@ public class Storage {
 				nodeSizeK=Integer.valueOf(node.size);
 				buddyAddress=Integer.valueOf(isPowerOfTwo(address)?address+nodeSizeK:address-nodeSizeK);
 				for(int k=0;k<list.size();k++) {
-					node=list.get(i);
+					node=list.get(k);
 					if(node.startAddress!=buddyAddress || node.processId!=-1) {
 						continue;
 					}
@@ -123,17 +123,5 @@ public class Storage {
 	
 	private boolean isPowerOfTwo(int x) {
 		return x>0 && (x&(x-1))==0;
-	}
-}
-
-class Node{
-	int processId;
-	int size;
-	int startAddress;
-	
-	public Node(int processId,int size,int startAddress) {
-		this.processId=processId;
-		this.size=size;
-		this.startAddress=startAddress;
 	}
 }

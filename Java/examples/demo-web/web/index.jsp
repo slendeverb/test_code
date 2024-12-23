@@ -6,7 +6,7 @@
 
     <body>
         <%
-
+            response.sendRedirect("jsp/giveContent.jsp");
         %>
     </body>
 </html>

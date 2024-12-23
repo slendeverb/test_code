@@ -1,14 +1,11 @@
 package SimpleOS.Simulation.Process;
 
+import java.util.ArrayList;
+
 import SimpleOS.Simulation.OS;
 
-public class Thread extends Process implements Runnable {
-	public Thread(int id, int priority, int deadline, int task, int memoryNeed,OS os) {
-		super(id, priority, deadline, task, memoryNeed, os);
-	}
-
-	@Override
-	public void run() {
-		
+public class Thread extends Process {
+	public Thread(int id,String name, int priority, int deadline, int task, int memoryNeed, ArrayList<Integer> sourceNeed, OS os) {
+		super(id, name, priority, deadline, task, memoryNeed, sourceNeed, os);
 	}
 }

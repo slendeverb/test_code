@@ -1,22 +1,22 @@
 package SimpleOS.Simulation.Process;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 import SimpleOS.Simulation.OS;
 import SimpleOS.Simulation.Memory.PageTable;
 
 public class Process {
-	public Process(int id,int priority,int deadline,int task,int memoryNeed,OS os) {
-		pcb=new PCB(id, priority, deadline, task, memoryNeed);
-		pageTable=new PageTable(memoryNeed,os);
+	public Process(int id,String name,int priority,int deadline,int task,int memoryNeed,ArrayList<Integer> sourceNeed,OS os) {
+		pcb=new PCB(id, name, priority, deadline, task, memoryNeed, sourceNeed, os);
+		pageTable=new PageTable(memoryNeed,this,os);
 	}
 	
-	public void block(LinkedList<Process> blockList) {
-		if(pcb.state!=State.RUNNING) {
-			return;
-		}
+	public void block(PriorityQueue<Process> blockList) {
 		pcb.state=State.BLOCKEDA;
-		blockList.add(this);
+		if(!blockList.contains(this)) {
+			blockList.add(this);
+		}
 	}
 	
 	public PCB pcb;
