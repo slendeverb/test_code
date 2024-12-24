@@ -2,11 +2,9 @@
 <html>
     <head>
         <title>Black Jack</title>
-        <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="index_div">
-            
-        </div>
+
     </body>
 </html>
