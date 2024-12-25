@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
-//@WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/*")
 public class LoginFilter implements Filter {
 
     @Override
@@ -29,7 +29,7 @@ public class LoginFilter implements Filter {
         String currentURL=req.getServletPath();
 
         if(session.getAttribute("user") == null && !allowList.contains(currentURL)) {
-            res.sendRedirect(req.getContextPath()+"/login.jsp");
+            res.sendRedirect("/Web/login.jsp");
         }else {
             chain.doFilter(request, response);
         }
