@@ -28,6 +28,7 @@ button:active {
 
 .continueGame-form,
 .newGame-form,
+.logout-form,
 #container-box {
     width: 240px;
     display: flex;
@@ -45,6 +46,8 @@ button:active {
 .continueGame-form button,
 .newGame-form input,
 .newGame-form button,
+.logout-form input,
+.logout-form button,
 #container-box input,
 #container-box button {
     margin: 6px 0;

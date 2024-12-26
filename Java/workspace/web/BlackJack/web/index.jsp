@@ -109,6 +109,9 @@
                     <button id="historyRecord">历史记录</button>
                     <button id="rules">游戏规则</button>
                 </div>
+                <form action="${pageContext.request.contextPath}/Logout" method="post" class="logout-form">
+                    <button type="submit" id="logout" name="logout">退出登录</button>
+                </form>
             </div>
 
             <div class="mask hide">
