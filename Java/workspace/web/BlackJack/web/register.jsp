@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>注册</title>
-        <link rel="stylesheet" type="text/css" href="css/register.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/register.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/BlackJack.css">
     </head>
     <body>
         <header>
@@ -10,28 +11,21 @@
         </header>
 
         <main>
-            <h3>注册：</h3>
-            <form action="/BlackJack/RegisterServlet" method="post">
-                请输入账号：<input type="text" name="username" id="username">
-                <br>请输入密码：<input type="password" name="password" id="password">
-                查看密码<input type="checkbox" id="checkPasswordRegister">
-                <br>请重复密码：<input type="password" name="repassword" id="repassword">
+            <span>注册：</span>
+            <span>${pageContext.session.getAttribute("errorMessage")}</span>
+            <%
+                session.removeAttribute("errorMessage");
+            %>
+            <form action="${pageContext.request.contextPath}/RegisterServlet" method="post">
+                <label for="username">请输入账号：</label> <input type="text" name="username" id="username">
+                <br><label for="password">请输入密码：</label> <input type="password" name="password" id="password">
+                <label for="checkPasswordRegister">查看密码</label> <input type="checkbox" id="checkPasswordRegister">
+                <br><label for="confirmPassword">请重复密码：</label> <input type="password" name="confirmPassword" id="confirmPassword">
                 <br><input type="submit" value="注册">
-                <input type="button" value="取消" id="cancel" onclick="location.href='/BlackJack'">
+                <input type="button" value="取消" id="cancel">
             </form>
         </main>
 
-        <script type="text/javascript">
-            let checkPasswordRegisterFunc = function (e){
-                if(document.getElementById('checkPasswordRegister')["checked"]){
-                    document.getElementById('password').type="text"
-                    document.getElementById("repassword").type="text"
-                }else {
-                    document.getElementById('password').type="password"
-                    document.getElementById("repassword").type="password"
-                }
-            }
-            document.getElementById("checkPasswordRegister").addEventListener('click', checkPasswordRegisterFunc)
-        </script>
+        <script type="text/javascript" src="js/register.js"></script>
     </body>
 </html>

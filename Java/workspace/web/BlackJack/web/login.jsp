@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>登录</title>
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/BlackJack.css">
     </head>
     <body>
         <header>
@@ -10,25 +11,20 @@
         </header>
 
         <main>
-            <h3>登录：</h3>
-            <form action="/BlackJack/LoginServlet" method="post">
-                请输入账号：<input type="text" name="username" id="username">
-                <br>请输入密码：<input type="password" name="password" id="password">
-                查看密码<input type="checkbox" id="checkPasswordLogin">
+            <span>登录：</span>
+            <span>${pageContext.session.getAttribute("errorMessage")}</span>
+            <%
+                session.removeAttribute("errorMessage");
+            %>
+            <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
+                <label for="username">请输入账号：</label> <input type="text" name="username" id="username">
+                <br><label for="password">请输入密码：</label> <input type="password" name="password" id="password">
+                <label for="checkPasswordLogin">查看密码</label> <input type="checkbox" id="checkPasswordLogin">
                 <br><input type="submit" value="登录">
-                <input type="button" value="注册" id="register" onclick="location.href='/BlackJack/register.jsp'">
+                <input type="button" value="注册" id="register">
             </form>
         </main>
 
-        <script type="text/javascript">
-            let checkPasswordLoginFunc = function (e){
-                if(document.getElementById('checkPasswordLogin')["checked"]){
-                    document.getElementById('password').type="text"
-                }else {
-                    document.getElementById('password').type="password"
-                }
-            }
-            document.getElementById("checkPasswordLogin").addEventListener('click', checkPasswordLoginFunc)
-        </script>
+        <script type="text/javascript" src="js/login.js"></script>
     </body>
 </html>

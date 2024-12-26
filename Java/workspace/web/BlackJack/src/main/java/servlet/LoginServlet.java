@@ -17,19 +17,20 @@ public class LoginServlet extends HttpServlet {
         UserDAO userDAO = new UserDAO();
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        username = username.trim();
-        password = password.trim();
         if(!userDAO.findUser(username)) {
+            req.getSession().setAttribute("errorMessage", "用户名错误");
+            req.getRequestDispatcher("/login.jsp").forward(req, resp);
             return;
-        }else {
-            String passwordInDatabase = userDAO.getPassword(username);
-            if (password.equals(passwordInDatabase)) {
-                req.getSession().setAttribute("user", username);
-                resp.sendRedirect(req.getContextPath()+"/index.jsp");
-            }else {
-                return;
-            }
         }
+        String passwordInDatabase = userDAO.getPassword(username);
+        if (!password.equals(passwordInDatabase)) {
+            req.getSession().setAttribute("errorMessage", "密码错误");
+            req.getRequestDispatcher("/login.jsp").forward(req, resp);
+            return;
+        }
+        req.getSession().setAttribute("user", username);
+        req.getSession().removeAttribute("errorMessage");
+        resp.sendRedirect(req.getContextPath()+"/index.jsp");
     }
 
     @Override

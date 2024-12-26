@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/LoginServlet")
-public class LoginServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/ContinueGameServlet")
+public class ContinueGameServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println(req.getSession().getId());
+        req.getRequestDispatcher("/BlackJack.jsp").forward(req, resp);
     }
 
     @Override
