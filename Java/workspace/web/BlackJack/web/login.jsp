@@ -10,18 +10,19 @@
             <h2>BlackJack</h2>
         </header>
 
-        <main>
-            <span>登录：</span>
-            <span>${pageContext.session.getAttribute("errorMessage")}</span>
+        <main class="login">
+            <div class="login-box">
+                <span id="loginSpan">登录：</span>
+                <span id="errorMessageSpan">${pageContext.session.getAttribute("errorMessage")}</span>
+            </div>
             <%
                 session.removeAttribute("errorMessage");
             %>
-            <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
-                <label for="username">请输入账号：</label> <input type="text" name="username" id="username">
-                <br><label for="password">请输入密码：</label> <input type="password" name="password" id="password">
-                <label for="checkPasswordLogin">查看密码</label> <input type="checkbox" id="checkPasswordLogin">
-                <br><input type="submit" value="登录">
-                <input type="button" value="注册" id="register">
+            <form action="${pageContext.request.contextPath}/LoginServlet" method="post" class="login-form">
+                <input type="text" name="username" id="username" placeholder="用户名">
+                <input type="password" name="password" id="password" placeholder="密码">
+                <button type="submit" value="登录">登录</button>
+                <button type="button" value="注册" id="register">注册</button>
             </form>
         </main>
 

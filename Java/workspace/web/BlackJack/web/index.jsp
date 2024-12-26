@@ -19,7 +19,7 @@
         </header>
 
         <main>
-            <div>
+            <div class="container">
                 <%
                     if(request.getSession().getAttribute("user")==null){
                         response.sendRedirect(request.getContextPath()+"/login.jsp");
@@ -46,7 +46,7 @@
                     }
                     if(lp!=null && money!=null){
                 %>
-                        <form action="${pageContext.request.contextPath}/ContinueGameServlet" method="post">
+                        <form action="${pageContext.request.contextPath}/ContinueGameServlet" method="post" class="continueGame-form">
                             <button type="submit" id="continue" name="continue">继续</button>
                         </form>
                 <%
@@ -102,11 +102,13 @@
                         }
                     }
                 %>
-                <form action="${pageContext.request.contextPath}/NewGameServlet" method="post">
+                <form action="${pageContext.request.contextPath}/NewGameServlet" method="post" class="newGame-form">
                     <button type="submit" id="newGame" name="newGame">新游戏</button>
                 </form>
-                <button id="historyRecord">历史记录</button><br>
-                <button id="rules">游戏规则</button>
+                <div id="container-box">
+                    <button id="historyRecord">历史记录</button>
+                    <button id="rules">游戏规则</button>
+                </div>
             </div>
 
             <div class="mask hide">
