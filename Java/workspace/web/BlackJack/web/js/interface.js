@@ -1,4 +1,6 @@
+// 定义游戏过程中相关
 let Interface={
+    // 定义游戏过程中的庄家和玩家信息
     roleInfo:{
         banker:{
             cardPoint:Config.actor.banker.cardPoint,
@@ -14,6 +16,7 @@ let Interface={
         }
     },
 
+    // 在调用了Config.initBanker()后及时更新roleInfo
     initBanker: function(){
         this.roleInfo.banker.cardPoint = Config.actor.banker.cardPoint
         this.roleInfo.banker.cardNumber=0
@@ -21,6 +24,7 @@ let Interface={
         this.roleInfo.banker.chips=Config.actor.banker.initMoney
     },
 
+    // 叫牌
     drawCard: function($role){
         let $li=Util.appendToElement('li',$role)
         let card=Util.randomCard()
@@ -31,6 +35,7 @@ let Interface={
         $li.setAttribute('data-str',card)
     },
 
+    // 提示信息，flag为true表示隐藏
     promptMessage:function ($mask,$prompt,flag,message){
         if(flag){
             $mask.className='mask hide'
@@ -40,7 +45,9 @@ let Interface={
         $mask.className='mask block'
     },
 
+    // 停牌
     stopCard:function(currentRole,$role,$count){
+        // 庄家直到抽取到17的停牌点
         while(Util.calculatePoints($role)<Config.actor.banker.stopCardAt){
             Interface.drawCard($role)
             Util.updateCardPoint(currentRole,$role,$count)

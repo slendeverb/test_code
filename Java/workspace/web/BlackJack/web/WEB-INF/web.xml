@@ -10,4 +10,49 @@
         <extension>css</extension>
         <mime-type>text/css</mime-type>
     </mime-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <servlet-class>servlet.LoginServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <url-pattern>/LoginServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>Logout</servlet-name>-->
+<!--        <servlet-class>servlet.Logout</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>Logout</servlet-name>-->
+<!--        <url-pattern>/Logout</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>RegisterServlet</servlet-name>-->
+<!--        <servlet-class>servlet.RegisterServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>RegisterServlet</servlet-name>-->
+<!--        <url-pattern>/RegisterServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>NewGameServlet</servlet-name>-->
+<!--        <servlet-class>servlet.NewGameServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>NewGameServlet</servlet-name>-->
+<!--        <url-pattern>/NewGameServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>ContinueGameServlet</servlet-name>-->
+<!--        <servlet-class>servlet.ContinueGameServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>ContinueGameServlet</servlet-name>-->
+<!--        <url-pattern>/ContinueGameServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>

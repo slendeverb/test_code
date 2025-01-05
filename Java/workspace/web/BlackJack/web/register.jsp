@@ -13,9 +13,11 @@
         <main class="register">
             <div class="register-box">
                 <span id="registerSpan">注册：</span>
+                <%--用于显示错误信息--%>
                 <span id="errorMessageSpan">${pageContext.session.getAttribute("errorMessage")}</span>
             </div>
             <%
+                // 显示完成后从session中删除错误信息
                 session.removeAttribute("errorMessage");
             %>
             <form action="${pageContext.request.contextPath}/RegisterServlet" method="post" class="register-form">

@@ -1,3 +1,4 @@
+// 存储Cookie，days表示Cookie保存多少天
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -8,6 +9,7 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 
+// 获取Cookie
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -19,6 +21,7 @@ function getCookie(name) {
     return null;
 }
 
+// 删除Cookie
 function eraseCookie(name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
 }

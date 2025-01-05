@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+// 用于访问user表
 public class UserDAO {
     protected DatabaseConnection databaseConnection=new DatabaseConnection();
     protected Connection con=null;
@@ -13,6 +14,7 @@ public class UserDAO {
     protected String sql=null;
     protected String tableName = "user";
 
+    // 查找用户
     public boolean findUser(String username) {
         con=databaseConnection.getConnection();
         sql= "select * from " + tableName + " where username=?";
@@ -31,6 +33,7 @@ public class UserDAO {
         return false;
     }
 
+    // 查询密码
     public String getPassword(String username) {
         con=databaseConnection.getConnection();
         sql="select password from " + tableName + " where username=?";
@@ -49,6 +52,7 @@ public class UserDAO {
         return null;
     }
 
+    // 添加用户
     public void addUser(String username, String password) {
         con=databaseConnection.getConnection();
         sql="insert into " + tableName + " values(?,?)";
@@ -64,6 +68,7 @@ public class UserDAO {
         }
     }
 
+    // 删除用户
     public void removeUser(String username) {
         con=databaseConnection.getConnection();
         sql="delete from " + tableName + " where username=?";

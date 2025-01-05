@@ -4,10 +4,10 @@ package bean;
 import java.sql.Timestamp;
 
 public class Record {
-    private String username;
-    private int lp;
-    private int money;
-    private Timestamp date;
+    private String username; // 用户名
+    private int lp; // 生命值
+    private int money; // 筹码
+    private Timestamp date; // 时间戳
 
     public String getUsername() {
         return username;

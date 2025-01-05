@@ -21,13 +21,15 @@
         <main>
             <div class="container">
                 <%
+                    // 判断有没有登录，没有就跳转到登陆界面
                     if(request.getSession().getAttribute("user")==null){
                         response.sendRedirect(request.getContextPath()+"/login.jsp");
                     }
+                    // 获取存储历史记录的信息
                     String username=(String) request.getSession().getAttribute("user");
                     Integer lp=null;
                     Integer money=null;
-                    String fromPage=null;
+                    String fromPage=null; // 只有点击“保存并退出”才会在Cookie中加入fromPage项，用于判断是否需要写入数据库
                     Timestamp date=new Timestamp(new Date().getTime());
                     RecordDAO recordDAO=new RecordDAO();
                     Cookie[] cookies=request.getCookies();
@@ -44,6 +46,7 @@
                             }
                         }
                     }
+                    // 如果Cookie中有LP和Money的记录，就显示“继续”按钮
                     if(lp!=null && money!=null){
                 %>
                         <form action="${pageContext.request.contextPath}/ContinueGameServlet" method="post" class="continueGame-form">
@@ -51,6 +54,7 @@
                         </form>
                 <%
                     }
+                    // 存储历史记录到数据库
                     if(lp!=null && money!=null && fromPage!=null){
                         if(fromPage.equals("blackjack")) {
                             bean.Record record=new Record();
@@ -59,7 +63,7 @@
                             record.setMoney(money);
                             record.setDate(date);
                             recordDAO.addRecord(record);
-
+                            // 删除fromPage项
                             if(cookies != null) {
                                 for(Cookie cookie : cookies) {
                                     if("fromPage".equals(cookie.getName())) {
@@ -72,6 +76,7 @@
                             }
                         }
                     }
+                    // 从数据库中读取历史记录，存到Cookie中
                     if(username!=null){
                         ResultSet rs=recordDAO.getRecords(username);
                         StringBuilder result=new StringBuilder();
@@ -113,7 +118,7 @@
                     <button type="submit" id="logout" name="logout">退出登录</button>
                 </form>
             </div>
-
+            <%--用于显示历史记录、游戏规则等--%>
             <div class="mask hide">
                 <div class="prompt" id="prompt">
 

@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.*;
 
+// 用于获得数据库连接
 public class DatabaseConnection {
     protected String databaseDriver = "com.mysql.cj.jdbc.Driver";
     protected String databaseName = "blackjack";
@@ -9,6 +10,7 @@ public class DatabaseConnection {
     protected String databaseUser = "root";
     protected String databasePassword = "040629";
 
+    // 获得数据库连接
     public Connection getConnection() {
         Connection con = null;
         try {
@@ -24,6 +26,7 @@ public class DatabaseConnection {
         return con;
     }
 
+    // 关闭数据库连接
     public void closeConnection(Connection con, PreparedStatement pstmt, ResultSet rs) {
         try {
             if (rs != null) {

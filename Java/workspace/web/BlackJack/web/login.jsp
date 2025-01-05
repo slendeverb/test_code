@@ -13,9 +13,11 @@
         <main class="login">
             <div class="login-box">
                 <span id="loginSpan">登录：</span>
+                <%--用于显示错误信息--%>
                 <span id="errorMessageSpan">${pageContext.session.getAttribute("errorMessage")}</span>
             </div>
             <%
+                // 显示完成后从session中删除错误信息
                 session.removeAttribute("errorMessage");
             %>
             <form action="${pageContext.request.contextPath}/LoginServlet" method="post" class="login-form">
