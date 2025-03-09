@@ -1,3 +1,6 @@
+import os
+
+import numpy as np
 import torch
 from nowcasting.config import cfg
 from nowcasting.models.forecaster import Forecaster
