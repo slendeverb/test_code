@@ -1,0 +1,60 @@
+form{
+    margin-bottom: 0;
+}
+
+input:hover,
+button:hover {
+    opacity: .9;
+    transition: all 60ms ease;
+}
+
+input:active,
+button:active {
+    opacity: .95;
+    transform: scale(.9);
+    transition: all 60ms ease;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-size: cover;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.continueGame-form,
+.newGame-form,
+.logout-form,
+#container-box {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    background: inherit;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.continueGame-form input,
+.continueGame-form button,
+.newGame-form input,
+.newGame-form button,
+.logout-form input,
+.logout-form button,
+#container-box input,
+#container-box button {
+    margin: 6px 0;
+    height: 36px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 0 14px;
+    color: #3d5245;
+}
