@@ -1,15 +1,44 @@
-﻿# CMakeList.txt: 顶层 CMake 项目文件，在此处执行全局配置
-# 并包含子项目。
-#
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.14)
+ 
+project(demo_qt LANGUAGES CXX)
+ 
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+ 
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
-# 如果支持，请为 MSVC 编译器启用热重载。
-if (POLICY CMP0141)
-  cmake_policy(SET CMP0141 NEW)
-  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
-endif()
+include_directories(
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/ui
+)
+ 
+# 开启c++17支持
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project ("demo-qt")
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Network REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Charts REQUIRED)
 
-# 包含子项目。
-add_subdirectory ("demo-qt")
+# 查找当前目录下的所有源文件，并将名称保存到 SRC_LIST 变量
+file(GLOB SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+file(GLOB UI_SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/ui/*.cpp)
+
+# 将源代码添加到此项目的可执行文件。
+add_executable(${PROJECT_NAME}
+    ${SRC_LIST}
+    ${UI_SRC_LIST}
+)
+
+# 连接设置
+target_link_libraries(${PROJECT_NAME}
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Network
+    Qt${QT_VERSION_MAJOR}::Charts
+)
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
