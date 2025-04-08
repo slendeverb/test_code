@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.28)
 
+set(CMAKE_CUDA_ARCHITECTURES "native")
+# nvidia-smi --query-gpu=compute_cap --format=csv
+# project(testC++ LANGUAGES CXX CUDA)
+
 project(testC++ LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -11,6 +15,8 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fopenmp -ltbb -march=native")
 # -ffast-math
+
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --expt-relaxed-constexpr")
 
 add_definitions(-DNOMINMAX)
 
@@ -26,10 +32,12 @@ include_directories(
 
 # 查找当前目录下的所有源文件，并将名称保存到 SRC_LIST 变量
 file(GLOB SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+file(GLOB CU_SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cu)
 
 # 将源代码添加到此项目的可执行文件。
 add_executable(${PROJECT_NAME}
         ${SRC_LIST}
+        ${CU_SRC_LIST}
         ${BACKWARD_ENABLE}
 )
 
@@ -97,6 +105,8 @@ find_package(benchmark CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE benchmark::benchmark benchmark::benchmark_main)
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
+set_target_properties(${PROJECT_NAME} PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     cmake_host_system_information(RESULT CPU_NUMBER_OF_LOGICAL_CORES QUERY NUMBER_OF_LOGICAL_CORES)
