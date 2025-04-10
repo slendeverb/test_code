@@ -44,6 +44,8 @@ std::mt19937_64 gen{rd()};
 #include <fmt/std.h>
 #include <fmt/xchar.h>
 
+#include <json/json.h>
+
 #include <range/v3/all.hpp>
 
 #include <glm/glm.hpp>
@@ -60,6 +62,7 @@ std::mt19937_64 gen{rd()};
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 
+#undef foreach
 #include <QByteArray>
 #include <QDebug>
 #include <QString>
@@ -99,6 +102,8 @@ QTextStream qout(stdout);
 
 #include <benchmark/benchmark.h>
 #include <benchmark/export.h>
+
+#include <openvdb/openvdb.h>
 
 #include "backward.hpp"
 namespace backward {

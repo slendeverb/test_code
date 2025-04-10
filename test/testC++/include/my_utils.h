@@ -71,7 +71,7 @@ class ThreadPool {
     }
 };
 
-ThreadPool tpool;
+inline ThreadPool tpool;
 
 class MTVector {
     std::vector<int> m_arr;
@@ -150,11 +150,11 @@ struct Pod {
    public:
     Pod() {}
 
-    Pod(Pod&& p) : m_t(std::move(p.m_t)) {}
+    Pod(Pod&& p) noexcept : m_t(std::move(p.m_t)) {}
 
     Pod(const Pod& p) : m_t(p.m_t) {}
 
-    Pod& operator=(Pod&& p) {
+    Pod& operator=(Pod&& p) noexcept {
         m_t = std::move(p.m_t);
         return *this;
     }

@@ -7,3 +7,4 @@
 #include <vulkan/vulkan.h>
 #include <opencv2/opencv.hpp>
 #include <SFML/Graphics.hpp>
+#include <openvdb/openvdb.h>

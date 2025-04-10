@@ -1,13 +1,14 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.30)
 
 set(CMAKE_CUDA_ARCHITECTURES "native")
 # nvidia-smi --query-gpu=compute_cap --format=csv
+# 52;61;70;75;80;86
 # project(testC++ LANGUAGES CXX CUDA)
 
 project(testC++ LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
-#set(CMAKE_CXX_EXTENSIONS OFF)
+ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -16,9 +17,11 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fopenmp -ltbb -march=native")
 # -ffast-math
 
-set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --expt-relaxed-constexpr")
-
-add_definitions(-DNOMINMAX)
+if(WIN32)
+    ADD_DEFINITIONS(-D_WIN32 -DNOMINMAX -DOPENVDB_STATICLIB -DOPENEXR_DLL)
+else()
+    ADD_DEFINITIONS (-pthread -fPIC)
+endif()
 
 macro(conan_basic_setup)
     set(options TARGETS NO_OUTPUT_DIRS SKIP_RPATH KEEP_RPATHS SKIP_STD SKIP_FPIC)
@@ -43,6 +46,11 @@ add_executable(${PROJECT_NAME}
 
 #target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
 
+set(CMAKE_THREAD_LIBS_INIT "-lpthread")
+set(CMAKE_HAVE_THREADS_LIBRARY 1)
+set(CMAKE_USE_WIN32_THREADS_INIT 0)
+set(CMAKE_USE_PTHREADS_INIT 1)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC Threads::Threads)
 
@@ -55,6 +63,9 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${FASTIO_INCLUDE_DIRS})
 find_package(fmt CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
 
+find_package(jsoncpp CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE JsonCpp::JsonCpp)
+
 find_package(range-v3 CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE range-v3::meta range-v3::concepts range-v3::range-v3)
 
@@ -63,7 +74,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE glm::glm)
 
 find_package(Backward CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE Backward::Backward)
-# add_definitions(-DBACKWARD_HAS_DW=1)
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL)
@@ -104,7 +114,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE TBB::tbb TBB::tbbmalloc TBB::tbbma
 find_package(benchmark CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE benchmark::benchmark benchmark::benchmark_main)
 
-set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
+find_package(OpenVDB REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenVDB::openvdb)
+
 set_target_properties(${PROJECT_NAME} PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
@@ -123,8 +135,10 @@ if(CCACHE_PROGRAM)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache)
 endif()
 
-target_precompile_headers(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include/header.h)
-target_precompile_headers(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include/my_utils.h)
+target_precompile_headers(${PROJECT_NAME} PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/header.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/my_utils.h
+)
 
 set(CMAKE_UNITY_BUILD ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES UNITY_BUILD ON)
