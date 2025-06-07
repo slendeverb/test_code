@@ -22,6 +22,8 @@
 #include <valarray>
 #include <variant>
 #include <vector>
+#include <print>
+#include <regex>
 
 std::random_device rd{};
 std::mt19937_64 gen{rd()};
@@ -63,6 +65,8 @@ std::mt19937_64 gen{rd()};
 #include <SFML/Window.hpp>
 
 #undef foreach
+#undef emit
+#undef slots
 #include <QByteArray>
 #include <QDebug>
 #include <QString>
@@ -70,7 +74,6 @@ std::mt19937_64 gen{rd()};
 QTextStream qin(stdin);
 QTextStream qout(stdout);
 
-#undef emit
 #define TBB_PREVIEW_CONCURRENT_LRU_CACHE 1
 #define TBB_PREVIEW_BLOCKED_RANGE_ND 1
 #include <tbb/blocked_range2d.h>
@@ -104,6 +107,18 @@ QTextStream qout(stdout);
 #include <benchmark/export.h>
 
 #include <openvdb/openvdb.h>
+
+#include <NumCpp.hpp>
+
+#include <libavcodec/avcodec.h>
+#include <libavdevice/avdevice.h>
+#include <libavfilter/avfilter.h>
+#include <libavformat/avformat.h>
+#include <libavutil/avutil.h>
+#include <libdwarf/dwarf.h>
+#include <libpng16/png.h>
+#include <libswresample/swresample.h>
+#include <libswscale/swscale.h>
 
 #include "backward.hpp"
 namespace backward {

@@ -7,20 +7,20 @@ set(CMAKE_CUDA_ARCHITECTURES "native")
 
 project(testC++ LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 20)
- set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fopenmp -ltbb -march=native")
-# -ffast-math
-
 if(WIN32)
     ADD_DEFINITIONS(-D_WIN32 -DNOMINMAX -DOPENVDB_STATICLIB -DOPENEXR_DLL)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /Wall")
 else()
     ADD_DEFINITIONS (-pthread -fPIC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fopenmp -ltbb -march=native")
+    # -ffast-math
 endif()
 
 macro(conan_basic_setup)
@@ -117,6 +117,17 @@ target_link_libraries(${PROJECT_NAME} PRIVATE benchmark::benchmark benchmark::be
 find_package(OpenVDB REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE OpenVDB::openvdb)
 
+find_package(Python3 COMPONENTS Development REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE Python3::Python)
+
+find_package(NumCpp CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE NumCpp::NumCpp)
+
+find_package(FFMPEG REQUIRED)
+target_include_directories(${PROJECT_NAME} PRIVATE ${FFMPEG_INCLUDE_DIRS})
+target_link_directories(${PROJECT_NAME} PRIVATE ${FFMPEG_LIBRARY_DIRS})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${FFMPEG_LIBRARIES})
+
 set_target_properties(${PROJECT_NAME} PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
@@ -126,6 +137,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     target_compile_options(${PROJECT_NAME} PUBLIC
             /EHsc
     )
+    add_compile_options(/D "_USE_MATH_DEFINES" /D "NOMINMAX" /D "NPY_NO_DEPRECATED_API")
 endif()
 
 find_program(CCACHE_PROGRAM ccache)
