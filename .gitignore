@@ -43,6 +43,8 @@ C++/examples/FaceRecognition/FaceRecognition/picture/*
 C++/examples/MusicPlayer/MusicPlayer/music/*
 C++/examples/WebCrawler/WebCrawler/web.html
 
+test/testCUDA/sources/*
+
 Java/examples/Building-Structure-Management/webapp/images/*
 Java/examples/Building-Structure-Management/webapp/scripts/artDialog/skins/*
 Java/examples/Building-Structure-Management/webapp/scripts/My97DatePicker/skin/default/img.gif
