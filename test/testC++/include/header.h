@@ -22,8 +22,8 @@
 #include <valarray>
 #include <variant>
 #include <vector>
-#include <print>
 #include <regex>
+#include <codecvt>
 
 std::random_device rd{};
 std::mt19937_64 gen{rd()};
@@ -63,6 +63,11 @@ std::mt19937_64 gen{rd()};
 #include <SFML/Network.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
+
+#include "backward.hpp"
+namespace backward {
+backward::SignalHandling sh;
+}
 
 #undef foreach
 #undef emit
@@ -120,7 +125,13 @@ QTextStream qout(stdout);
 #include <libswresample/swresample.h>
 #include <libswscale/swscale.h>
 
-#include "backward.hpp"
-namespace backward {
-backward::SignalHandling sh;
-}
+#include <indicators/progress_bar.hpp>
+
+#include <fast-cpp-csv-parser/csv.h>
+
+#include <csv2/mio.hpp>
+#include <csv2/parameters.hpp>
+#include <csv2/reader.hpp>
+#include <csv2/writer.hpp>
+
+#include <sciplot/sciplot.hpp>
