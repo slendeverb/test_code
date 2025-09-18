@@ -4,9 +4,12 @@ import torchvision
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard.writer import SummaryWriter
 
+from model import Tudui
+
 # 定义训练的设备
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+# CIFAR-10对VGG-16来说规模过小, 容易产生过拟合
 # 准备数据集
 train_data = torchvision.datasets.CIFAR10(
     root="../CIFAR10",
@@ -34,13 +37,16 @@ train_dataloader = DataLoader(train_data, batch_size=64, shuffle=True, drop_last
 test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True, drop_last=True)
 
 # 创建网络模型
-# tudui = Tudui()
-# tudui = tudui.to(device)
 vgg16_false = torchvision.models.vgg16(weights=None)
 torch.save(vgg16_false, "../models/vgg16/not_trained/vgg16_false.pth")
-tudui = torch.load("../models/vgg16/not_trained/vgg16_false.pth")
-tudui.classifier[6] = torch.nn.Linear(4096, 10)
-tudui.to(device)
+model = torch.load("../models/vgg16/not_trained/vgg16_false.pth",weights_only=False)
+model.avgpool = torch.nn.AdaptiveAvgPool2d((1, 1))
+model.classifier[0] = torch.nn.Linear(512, 4096)
+model.classifier[6] = torch.nn.Linear(4096, 10)
+# model = Tudui()
+model.to(device)
+
+print(model)
 
 # 损失函数
 loss_fn = nn.CrossEntropyLoss()
@@ -48,7 +54,7 @@ loss_fn.to(device)
 
 # 优化器
 learning_rate = 1e-3
-optimizer = torch.optim.SGD(tudui.parameters(), lr=learning_rate, momentum=0.9)
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
 
 # 设置训练网络的一些参数
 # 记录训练的次数
@@ -65,13 +71,13 @@ for epoch in range(epochs):
     print(f"----------第 {epoch + 1} 轮训练开始----------")
 
     # 训练步骤开始
-    tudui.train()
+    model.train()
     for data in train_dataloader:
         optimizer.zero_grad()
         imgs, targets = data
         imgs = imgs.to(device)
         targets = targets.to(device)
-        outputs = tudui(imgs)
+        outputs = model(imgs)
         loss = loss_fn(outputs, targets)
         loss.backward()
         optimizer.step()
@@ -82,7 +88,7 @@ for epoch in range(epochs):
             writer.add_scalar("train_loss", loss.item(), total_train_step)
 
     # 测试步骤开始
-    tudui.eval()
+    model.eval()
     total_test_loss = 0
     total_accuracy = 0
     with torch.no_grad():
@@ -90,7 +96,7 @@ for epoch in range(epochs):
             imgs, targets = data
             imgs = imgs.to(device)
             targets = targets.to(device)
-            outputs = tudui(imgs)
+            outputs = model(imgs)
             loss = loss_fn(outputs, targets)
             total_test_loss += loss.item()
             accuracy = outputs.argmax(axis=1).eq(targets).sum().item()
@@ -102,7 +108,9 @@ for epoch in range(epochs):
     writer.add_scalar("test_accuracy", total_accuracy / test_data_size, total_test_step)
     total_test_step += 1
 
-    torch.save(tudui, f"../models/tudui/tudui_{epoch}.pth")
-    print("模型已保存")
+    if (epoch + 1) % 10 == 0:
+        torch.save(model, f"../models/vgg16/trained/vgg16_{epoch}.pth")
+        # torch.save(model, f'../models/tudui/tudui_{epoch}.pth')
+        print("模型已保存")
 
 writer.close()

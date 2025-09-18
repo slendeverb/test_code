@@ -38,6 +38,7 @@ Debug
 Release
 CMakePresets.json
 CMakeUserPresets.json
+__pycache__
 
 C++/examples/FaceRecognition/FaceRecognition/picture/*
 C++/examples/MusicPlayer/MusicPlayer/music/*
